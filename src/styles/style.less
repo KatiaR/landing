@@ -1,5 +1,6 @@
 @main-color: #30b5d8;
 @gray-color: lightgray;
+@import url('./header.less');
 
 @font-face {
   font-family: 'icomoon';
@@ -53,98 +54,6 @@ body {
   margin: 0;
   padding: 0;
 }
-
-header {
-  background-color: white;
-  width: 100%;
-  height: 70px;
-  nav {
-    display: inline-block;
-    float: left;
-    position: relative;
-    ul, li {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-
-    }
-    ul.list_routes li {
-      float: left;
-      a {
-        text-decoration: none;
-        color: gray;
-        display: inline-block;
-        padding: 11px 13px;
-        margin-top: 10px;
-        font-size: 1.3em;
-        &:hover {
-          color: @main-color;
-        }
-      }
-    }
-  }
-  .logo {
-    background-color: @main-color;
-    float: left;
-    padding: 10px 30px;
-    margin: 0 10px 0 100px;
-    height: 100%;
-  }
-  .box-search {
-    width: 75px;
-    height: 70px;
-    float: left;
-    left: 20px;
-    position: relative;
-    background-color: @gray-color;
-    &:hover {
-      cursor: pointer;
-      background-color: @main-color;
-    }
-    .icon {
-      position: absolute;
-      top: 15px;
-      left: 23px;
-      font-size: 30px;
-    }
-  }
-  .checkenter {
-    position: relative;
-  }
-
-  .log-in {
-    width: 75px;
-    height: 40px;
-    border: none;
-    text-transform: uppercase;
-    float: right;
-    font-size: 1em;
-    font-weight: 600;
-    margin: 15px 0;
-    background-color: white;
-    &:hover {
-      cursor: pointer;
-      background-color: @gray-color;
-    }
-  }
-
-  .register {
-    width: 140px;
-    height: 40px;
-    border: none;
-    background-color: @main-color;
-    text-transform: uppercase;
-    float: right;
-    font-size: 1em;
-    font-weight: 600;
-    margin: 15px 10px;
-    &:hover {
-      cursor: pointer;
-      background-color: @gray-color;
-    }
-  }
-}
-
 
 #menucheck2 {
   display: none;
@@ -704,12 +613,12 @@ i.fa.fa-user-o {
     display: none;
   }
 
-  ul.list_routes li a {
+  header nav ul.list_routes li a {
     padding: 5px 13px;
     margin-top: 0px;
   }
 
-  ul.list_routes li a:hover {
+  header nav ul.list_routes li a:hover {
     color: white;
   }
   .part1-description p,
