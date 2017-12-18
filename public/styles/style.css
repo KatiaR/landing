@@ -107,7 +107,7 @@ ul.list_routes li a {
 }
 
 ul.list_routes a:hover {
-    color: cadetblue;
+    color: #30b5d8;
 }
 
 .list_routes li {
@@ -146,16 +146,26 @@ ul.list_routes a:hover {
     background-color: white;
 }
 
+.Enter:hover {
+    cursor: pointer;
+    background-color: lightgray;
+}
+
 .Chek_in {
     width: 140px;
     height: 40px;
     border: none;
-    background-color: blue;
+    background-color: #30b5d8;
     text-transform: uppercase;
     float: right;
     font-size: 1em;
     font-weight: 600;
     margin: 15px 10px;
+}
+
+.Chek_in:hover {
+    cursor: pointer;
+    background-color: lightgray;
 }
 
 #menucheck2 {
@@ -355,7 +365,7 @@ img.decor {
 }
 
 .chapter_header a:hover {
-    color: blue;
+    color: #30b5d8;
 }
 
 hr {
@@ -382,6 +392,7 @@ hr {
     background: lightgray url("../images/select-arrow.png") no-repeat;
     background-position-x: 98%;
     background-position-y: 51%;
+    padding-left: 5px;
 }
 
 i.fa.fa-user-o {
@@ -396,36 +407,29 @@ i.fa.fa-user-o {
 .partcomm {
     position: relative;
     overflow: hidden;
-    display: inline-block;
+    float: left;
 }
+
 .slide2 img {
     width: 100%;
 }
 
 .part1 {
     width: 58%;
+    position: relative;
 }
 
-.part2 {
-    width: 42%;
-}
-
-.part3 {
-    width: 29%;
-}
-
-.part4 {
-    width: 29%;
-}
-
+.part2,
 .part5 {
     width: 42%;
 }
 
-.part6 {
-    width: 21%;
+.part3,
+.part4 {
+    width: 29%;
 }
 
+.part6,
 .part7 {
     width: 21%;
 }
@@ -433,25 +437,212 @@ i.fa.fa-user-o {
 .part1-description {
     position: absolute;
     left: 8%;
-    width: 37%;
+    width: 67%;
+    bottom: 10%;
     text-transform: none;
     background-color: #8e2e49;
     opacity: 0.8;
     color: white;
-    font-family: Open Sans Extra Bold;
     transform: skewX(-5deg);
+    font-size: 25px;
 }
 
-/*.block-search:after {
-    content: url(..\public\images\select-arrow.png);
+.part1-description::after {
+    content: " ";
     position: absolute;
-    z-index: 1;
+    border: 3px solid #f0cb59;
+    width: 25%;
+    top: -15px;
+}
+
+.part1-description p {
+    margin: 0;
+    padding: 10px 5px;
+}
+
+.part2-description,
+.part3-description,
+.part5-description {
+    position: absolute;
+    left: 8%;
+    width: 67%;
+    bottom: 5%;
+    text-transform: none;
+    color: white;
+    font-size: 20px;
+}
+
+.part2-description::after,
+.part5-description::after {
+    content: " ";
+    position: absolute;
+    border: 3px solid #f0cb59;
+    width: 30%;
+    top: -5px;
+
+}
+
+.part2:hover .part2-description,
+.part3:hover .part3-description,
+.part4:hover .part4-description,
+.part5:hover .part5-description,
+.part6:hover .part6-description,
+.part7:hover .part7-description {
+    display: none;
+}
+
+.part2-description-block2,
+.part5-description-block2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: lightgray;
+    display: none;
+
+}
+
+.part2:hover .part2-description-block2,
+.part3:hover .part3-description-block2,
+.part4:hover .part4-description-block2,
+.part5:hover .part5-description-block2,
+.part6:hover .part6-description-block2,
+.part7:hover .part7-description-block2 {
+    display: block;
+}
+
+.wrapper-description {
+   position: absolute;
+    display: table;
     text-align: center;
-    pointer-events: none;
-    box-sizing: border-box;
-    background: url(..\public\images\select-arrow.png);
-display: block;
-}*/
+    vertical-align: middle;
+    width: 100%;
+    height: 100%;
+}
+
+.border-arrow::after,
+.border-arrow5::after {
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    left: -40px;
+    top: 50%;
+    border: 20px solid transparent;
+    border-right: 20px solid lightgray;
+    margin-top: -20px;
+}
+
+.part2-description-block2 p,
+.part3-description-block2 p,
+.part4-description-block2 p,
+.part5-description-block2 p,
+.part6-description-block2 p,
+.part7-description-block2 p {
+    font-size: 20px;
+    text-transform: none;
+    padding: 5% 5%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.part3-description::after,
+.part4-description::after {
+    content: " ";
+    position: absolute;
+    border: 3px solid #f0cb59;
+    width: 40%;
+    top: -5px;
+
+}
+
+.part3-description-block2 {
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    background-color: lightgray;
+    display: none;
+}
+
+
+.border-arrow2::after {
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border: 20px solid transparent;
+    border-bottom: 20px solid lightgray;
+    margin-left: -20px;
+}
+
+.part4-description {
+    position: absolute;
+    left: 8%;
+    width: 67%;
+    bottom: 0;
+    text-transform: none;
+    color: white;
+    font-size: 20px;
+}
+
+.part4-description-block2 {
+    position: absolute;
+    bottom: 0;
+    height: 40%;
+    width: 100%;
+    background-color: lightgray;
+    display: none;
+}
+
+
+.part6-description,
+.part7-description {
+    position: absolute;
+    left: 8%;
+    width: 70%;
+    bottom: 0;
+    text-transform: none;
+    color: white;
+    font-size: 20px;
+}
+
+.part6-description::after,
+.part7-description::after {
+    content: " ";
+    position: absolute;
+    border: 3px solid #f0cb59;
+    width: 50%;
+    top: -5px;
+
+}
+
+.part6-description-block2,
+.part7-description-block2 {
+    position: absolute;
+    bottom: 0;
+    height: 70%;
+    width: 100%;
+    background-color: lightgray;
+    display: none;
+}
+
+.border-arrow4::after,
+.border-arrow6::after,
+.border-arrow7::after {
+    width: 0;
+    height: 0;
+    content: '';
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    border: 20px solid transparent;
+    border-bottom: 20px solid lightgray;
+    margin-left: -20px;
+}
 
 @media (max-width: 1060px) {
     .list_routes {
@@ -473,8 +664,10 @@ display: block;
         display: block;
     }
 
-    .box-search {
-        display: none;
+    .block-search {
+        float: none;
+        width: 70%;
+        margin: 0 auto;
     }
 
     label.menulist {
@@ -533,12 +726,6 @@ display: block;
         display: none;
     }
 
-    .block-search {
-        float: none;
-        margin: 0;
-        width: 70%;
-    }
-
     ul.list_routes li a {
         padding: 5px 13px;
         margin-top: 0px;
@@ -547,9 +734,34 @@ display: block;
     ul.list_routes li a:hover {
         color: white;
     }
+    .part1-description p,
+    .part2-description p,
+    .part3-description p,
+    .part4-description p,
+    .part5-description p,
+    .part6-description p,
+    .part7-description p {
+        font-size: 15px;
+    }
+.part2-description-block2 p,
+.part3-description-block2 p,
+.part4-description-block2 p,
+.part5-description-block2 p,
+.part6-description-block2 p,
+.part7-description-block2 p {
+    font-size: 15px;
 
 }
 
+}
+@media (max-width: 850px) {
+    .part1, .part2, .part5 {
+        width: 100%;
+    }
+    .part3, .part4, .part6, .part7 {
+        width: 50%;
+    }
+}
 @media (max-width: 640px) {
     .logo {
         padding: 10px 5px;
@@ -599,42 +811,8 @@ display: block;
         top: 71%;
     }
 
-    .part1 img {
-        width: 100%;
-    }
-
-    .part2 img {
-        float: left;
-        width: 100%;
-    }
-
-    .part3 img {
-        width: 50%;
-        margin: 0;
-    }
-
-    .part4 img {
-        width: 50%;
-        margin: 0;
-    }
-
-    .part5 img {
-        float: left;
-        width: 100%;
-    }
-
-    .part6 img {
-
-        width: 50%;
 
     }
-
-    .part7 img {
-
-        width: 50%;
-
-    }
-}
 
 @media (max-width: 480px) {
     .new {
