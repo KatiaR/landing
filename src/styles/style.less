@@ -1,8 +1,9 @@
+@main-color: #30b5d8;
+@gray-color: lightgray;
+
 @font-face {
   font-family: 'icomoon';
-  src: url('fonts/icomoon.ttf?rs9hih') format('truetype'),
-  url('../public/fonts/icomoon.woff') format('woff'),
-  url('fonts/icomoon.svg?rs9hih#icomoon') format('svg');
+  src: url('../fonts/icomoon.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -10,6 +11,13 @@
 @font-face {
   font-family: 'Open Sans';
   src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans Bold';
+  src: url('../fonts/OpenSans-Bold.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
@@ -41,28 +49,6 @@ body {
   content: "\e9bd";
 }
 
-@font-face {
-  font-family: 'icomoon';
-  src: url('../fonts/icomoon.woff?rs9hih') format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-
-  /* Better Font Rendering =========== */
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -72,101 +58,93 @@ header {
   background-color: white;
   width: 100%;
   height: 70px;
+  nav {
+    display: inline-block;
+    float: left;
+    position: relative;
+    ul, li {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+
+    }
+    ul.list_routes li {
+      float: left;
+      a {
+        text-decoration: none;
+        color: gray;
+        display: inline-block;
+        padding: 11px 13px;
+        margin-top: 10px;
+        font-size: 1.3em;
+        &:hover {
+          color: @main-color;
+        }
+      }
+    }
+  }
+  .logo {
+    background-color: @main-color;
+    float: left;
+    padding: 10px 30px;
+    margin: 0 10px 0 100px;
+    height: 100%;
+  }
+  .box-search {
+    width: 75px;
+    height: 70px;
+    float: left;
+    left: 20px;
+    position: relative;
+    background-color: @gray-color;
+    &:hover {
+      cursor: pointer;
+      background-color: @main-color;
+    }
+    .icon {
+      position: absolute;
+      top: 15px;
+      left: 23px;
+      font-size: 30px;
+    }
+  }
+  .checkenter {
+    position: relative;
+  }
+
+  .log-in {
+    width: 75px;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+    float: right;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 15px 0;
+    background-color: white;
+    &:hover {
+      cursor: pointer;
+      background-color: @gray-color;
+    }
+  }
+
+  .register {
+    width: 140px;
+    height: 40px;
+    border: none;
+    background-color: @main-color;
+    text-transform: uppercase;
+    float: right;
+    font-size: 1em;
+    font-weight: 600;
+    margin: 15px 10px;
+    &:hover {
+      cursor: pointer;
+      background-color: @gray-color;
+    }
+  }
 }
 
-.logo {
-  background-color: #30b5d8;
-  float: left;
-  padding: 10px 30px;
-  margin: 0 10px 0 100px;
-  height: 100%;
-}
-
-nav {
-  display: inline-block;
-  float: left;
-  position: relative;
-
-}
-
-ul, li {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-
-}
-
-ul.list_routes li a {
-  text-decoration: none;
-  color: gray;
-  display: inline-block;
-  padding: 11px 13px;
-  margin-top: 10px;
-  font-size: 1.3em;
-
-}
-
-ul.list_routes a:hover {
-  color: #30b5d8;
-}
-
-.list_routes li {
-  float: left;
-
-}
-
-.box-search {
-  width: 75px;
-  height: 70px;
-  float: left;
-  left: 20px;
-  position: relative;
-  background-color: lightgray;
-}
-
-.icon {
-  position: absolute;
-  top: 35%;
-  left: 35%;
-}
-
-.checkenter {
-  position: relative;
-}
-
-.Enter {
-  width: 75px;
-  height: 40px;
-  border: none;
-  text-transform: uppercase;
-  float: right;
-  font-size: 1em;
-  font-weight: 600;
-  margin: 15px 0;
-  background-color: white;
-}
-
-.Enter:hover {
-  cursor: pointer;
-  background-color: lightgray;
-}
-
-.Chek_in {
-  width: 140px;
-  height: 40px;
-  border: none;
-  background-color: #30b5d8;
-  text-transform: uppercase;
-  float: right;
-  font-size: 1em;
-  font-weight: 600;
-  margin: 15px 10px;
-}
-
-.Chek_in:hover {
-  cursor: pointer;
-  background-color: lightgray;
-}
 
 #menucheck2 {
   display: none;
@@ -277,7 +255,7 @@ label.regform {
   position: absolute;
   width: 30%;
   height: auto;
-  background-color: #30b5d8;
+  background-color: @main-color;
   right: 360px;
   top: 160px;
 }
@@ -359,13 +337,13 @@ img.decor {
   text-transform: none;
   text-decoration: none;
   border-bottom: dashed 1px;
-  color: #30b5d8;
+  color: @main-color;
   margin: 10px;
   display: inline-block;
 }
 
 .chapter_header a:hover {
-  color: #30b5d8;
+  color: @main-color;
 }
 
 hr {
@@ -382,14 +360,14 @@ hr {
   width: 45%;
   float: right;
   margin: -60px 40px;
-  color: #30b5d8;
+  color: @main-color;
   font-size: 0.9em;
   display: inline-block;
   -webkit-appearance: none;
   -moz-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  background: lightgray url("../images/select-arrow.png") no-repeat;
+  background: @gray-color url("../images/select-arrow.png") no-repeat;
   background-position-x: 98%;
   background-position-y: 51%;
   padding-left: 5px;
@@ -498,7 +476,7 @@ i.fa.fa-user-o {
   right: 0;
   height: 100%;
   width: 50%;
-  background-color: lightgray;
+  background-color: @gray-color;
   display: none;
 
 }
@@ -530,7 +508,7 @@ i.fa.fa-user-o {
   left: -40px;
   top: 50%;
   border: 20px solid transparent;
-  border-right: 20px solid lightgray;
+  border-right: 20px solid @gray-color;
   margin-top: -20px;
 }
 
@@ -562,7 +540,7 @@ i.fa.fa-user-o {
   bottom: 0;
   height: 40%;
   width: 100%;
-  background-color: lightgray;
+  background-color: @gray-color;
   display: none;
 }
 
@@ -575,7 +553,7 @@ i.fa.fa-user-o {
   bottom: 100%;
   left: 50%;
   border: 20px solid transparent;
-  border-bottom: 20px solid lightgray;
+  border-bottom: 20px solid @gray-color;
   margin-left: -20px;
 }
 
@@ -594,7 +572,7 @@ i.fa.fa-user-o {
   bottom: 0;
   height: 40%;
   width: 100%;
-  background-color: lightgray;
+  background-color: @gray-color;
   display: none;
 }
 
@@ -626,7 +604,7 @@ i.fa.fa-user-o {
   bottom: 0;
   height: 70%;
   width: 100%;
-  background-color: lightgray;
+  background-color: @gray-color;
   display: none;
 }
 
@@ -640,7 +618,7 @@ i.fa.fa-user-o {
   bottom: 100%;
   left: 50%;
   border: 20px solid transparent;
-  border-bottom: 20px solid lightgray;
+  border-bottom: 20px solid @gray-color;
   margin-left: -20px;
 }
 
@@ -648,7 +626,7 @@ i.fa.fa-user-o {
   .list_routes {
     display: none;
     position: absolute;
-    background: #30b5d8;
+    background: @main-color;
   }
 
   .list_routes li {
