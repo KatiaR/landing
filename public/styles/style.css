@@ -756,11 +756,11 @@ i.fa.fa-user-o {
 .block-games1 .wrapper-games {
   background-color: #399084;
   margin-left: 100px;
-  height: 90%;
   position: relative;
   border-top: 1px solid transparent;
+  border-bottom: 0.1px solid transparent;
 }
-@media (max-width: 1060px) {
+@media (max-width: 1124px) {
   .block-games1 .wrapper-games {
     width: 100%;
     margin-left: 0;
@@ -776,13 +776,13 @@ i.fa.fa-user-o {
   top: 18px;
   margin-left: -100px;
 }
-@media (max-width: 1060px) {
+@media (max-width: 1124px) {
   .block-games1 .wrapper-games .left-effect {
     display: none;
   }
 }
 .block-games1 .wrapper-games .chapter-games-block1 {
-  margin: 20px 55px;
+  margin: 20px 60px;
   text-align: center;
 }
 .block-games1 .wrapper-games .chapter-games-block1 h2 {
@@ -816,13 +816,14 @@ i.fa.fa-user-o {
   }
 }
 .block-games1 .wrapper-games .chapter-games-block1 .radio-point {
-  margin: 20px 10%;
+  margin: 20px 0 0 -200px;
   padding: 5px;
   display: inline-block;
 }
 @media (max-width: 1060px) {
   .block-games1 .wrapper-games .chapter-games-block1 .radio-point {
     width: 75%;
+    margin: 20px 10%;
   }
 }
 .block-games1 .wrapper-games .chapter-games-block1 .radio-point input {
@@ -912,4 +913,42 @@ i.fa.fa-user-o {
   border-bottom: 15px solid transparent;
   top: 12px;
   right: 15px;
+}
+.block-games1 .wrapper-g-content {
+  margin: 40px 60px;
+  background-color: white;
+}
+.block-games1 .wrapper-g-content .content-col1,
+.block-games1 .wrapper-g-content .content-col2 {
+  float: left;
+  width: 50%;
+}
+.block-games1 .wrapper-g-content .content-col1 > img,
+.block-games1 .wrapper-g-content .content-col2 > img {
+  float: left;
+  margin: 10px;
+  width: 50%;
+}
+.block-games1 .wrapper-g-content .content-col3,
+.block-games1 .wrapper-g-content .content-col4 {
+  float: left;
+  width: 50%;
+}
+.block-games1 .wrapper-g-content .content-col3 > img,
+.block-games1 .wrapper-g-content .content-col4 > img {
+  float: left;
+  margin: 10px;
+  width: 50%;
+}
+.block-games1 .wrapper-g-content h2,
+.block-games1 .wrapper-g-content p {
+  margin: 20px 30px 5px 300px;
+  padding-right: 10px;
+}
+@media (max-width: 1230px) {
+  .block-games1 .wrapper-g-content h2,
+  .block-games1 .wrapper-g-content p {
+    font-size: 1em;
+    margin: 10px 5px 5px 200px;
+  }
 }

@@ -788,14 +788,13 @@ i.fa.fa-user-o {
 .block-games1 {
   height: 500px;
 
-
   .wrapper-games {
     background-color: #399084;
     margin-left: 100px;
-    height: 90%;
     position: relative;
     border-top: 1px solid transparent;
-    @media (max-width: 1060px) {
+    border-bottom: 0.1px solid transparent;
+    @media (max-width: 1124px) {
       width: 100%;
       margin-left: 0;
     }
@@ -808,12 +807,12 @@ i.fa.fa-user-o {
       float: left;
       top: 18px;
       margin-left: -100px;
-      @media (max-width: 1060px) {
+      @media (max-width: 1124px) {
         display: none;
       }
     }
     .chapter-games-block1 {
-      margin: 20px 55px;
+      margin: 20px 60px;
       text-align: center;
 
       h2 {
@@ -840,15 +839,16 @@ i.fa.fa-user-o {
         }
         @media (max-width: 1060px) {
 
-          float: none;       }
+          float: none;
+        }
       }
       .radio-point {
-        margin: 20px 10%;
+        margin: 20px 0 0 -200px;
         padding: 5px;
         display: inline-block;
         @media (max-width: 1060px) {
           width: 75%;
-
+          margin: 20px 10%;
         }
         input {
           float: left;
@@ -931,5 +931,42 @@ i.fa.fa-user-o {
         }
       }
     }
+  }
+  .wrapper-g-content {
+    margin: 40px 60px;
+    background-color: white;
+    .size-block () {
+      width: 50%;
+    }
+    .img-block () {
+      float: left;
+      margin: 10px;
+      width: 50%;
+    }
+    .content-col1, .content-col2 {
+      float: left;
+      .size-block;
+      & > img {
+        .img-block;
+      }
+
+    }
+    .content-col3, .content-col4 {
+      float: left;
+      .size-block;
+      & > img {
+        .img-block;
+      }
+    }
+    h2,p {
+      margin: 20px 30px 5px 300px;
+      padding-right: 10px;
+      @media (max-width: 1230px) {
+        font-size: 1em;
+        margin: 10px 5px 5px 200px;
+
+      }
+    }
+
   }
 }
