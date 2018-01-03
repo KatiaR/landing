@@ -918,9 +918,30 @@ i.fa.fa-user-o {
   margin: 40px 60px;
   background-color: white;
 }
+.block-games1 .wrapper-g-content .rating-games-c1,
+.block-games1 .wrapper-g-content .rating-games-c2,
+.block-games1 .wrapper-g-content .rating-games-c3,
+.block-games1 .wrapper-g-content .rating-games-c4 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #f0cb59;
+  top: -10px;
+  right: 5px;
+}
+.block-games1 .wrapper-g-content .rating-games-c1 > span,
+.block-games1 .wrapper-g-content .rating-games-c2 > span,
+.block-games1 .wrapper-g-content .rating-games-c3 > span,
+.block-games1 .wrapper-g-content .rating-games-c4 > span {
+  font-size: x-large;
+  font-weight: 900;
+  line-height: 50px;
+  padding: 10px;
+}
 .block-games1 .wrapper-g-content .content-col1,
 .block-games1 .wrapper-g-content .content-col2 {
   float: left;
+  position: relative;
   width: 50%;
 }
 .block-games1 .wrapper-g-content .content-col1 > img,
@@ -944,6 +965,7 @@ i.fa.fa-user-o {
 .block-games1 .wrapper-g-content .content-col3,
 .block-games1 .wrapper-g-content .content-col4 {
   float: left;
+  position: relative;
   width: 50%;
 }
 .block-games1 .wrapper-g-content .content-col3 > img,
@@ -967,7 +989,7 @@ i.fa.fa-user-o {
 .block-games1 .wrapper-g-content h2,
 .block-games1 .wrapper-g-content p {
   margin: 20px 30px 5px 300px;
-  padding-right: 10px;
+  padding-right: 50px;
 }
 @media (max-width: 1230px) {
   .block-games1 .wrapper-g-content h2,
