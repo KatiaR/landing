@@ -928,6 +928,7 @@ i.fa.fa-user-o {
   float: left;
   margin: 10px;
   width: 50%;
+  border-bottom: 5px solid red;
 }
 .block-games1 .wrapper-g-content .content-col3,
 .block-games1 .wrapper-g-content .content-col4 {
@@ -939,6 +940,7 @@ i.fa.fa-user-o {
   float: left;
   margin: 10px;
   width: 50%;
+  border-bottom: 5px solid red;
 }
 .block-games1 .wrapper-g-content h2,
 .block-games1 .wrapper-g-content p {
