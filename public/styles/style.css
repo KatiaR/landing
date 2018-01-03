@@ -930,6 +930,17 @@ i.fa.fa-user-o {
   width: 50%;
   border-bottom: 5px solid red;
 }
+@media (max-width: 930px) {
+  .block-games1 .wrapper-g-content .content-col1,
+  .block-games1 .wrapper-g-content .content-col2 {
+    width: 100%;
+  }
+  .block-games1 .wrapper-g-content .content-col1 > img,
+  .block-games1 .wrapper-g-content .content-col2 > img {
+    width: 30%;
+    border-bottom: 3px solid red;
+  }
+}
 .block-games1 .wrapper-g-content .content-col3,
 .block-games1 .wrapper-g-content .content-col4 {
   float: left;
@@ -941,6 +952,17 @@ i.fa.fa-user-o {
   margin: 10px;
   width: 50%;
   border-bottom: 5px solid red;
+}
+@media (max-width: 930px) {
+  .block-games1 .wrapper-g-content .content-col3,
+  .block-games1 .wrapper-g-content .content-col4 {
+    width: 100%;
+  }
+  .block-games1 .wrapper-g-content .content-col3 > img,
+  .block-games1 .wrapper-g-content .content-col4 > img {
+    width: 30%;
+    border-bottom: 3px solid red;
+  }
 }
 .block-games1 .wrapper-g-content h2,
 .block-games1 .wrapper-g-content p {
