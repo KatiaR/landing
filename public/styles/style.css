@@ -1029,6 +1029,10 @@ i.fa.fa-user-o {
     display: none;
   }
 }
+.block-games2 .wrapper-games2 .chapter-games2 {
+  margin: 20px 60px;
+  text-align: center;
+}
 .block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 h2 {
   text-transform: uppercase;
   color: black;
@@ -1037,7 +1041,19 @@ i.fa.fa-user-o {
   float: left;
   margin: 30px 20px 10px 60px;
 }
-.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 a {
+@media (max-width: 1060px) {
+  .block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 h2 {
+    width: 80%;
+    float: none;
+  }
+}
+@media (max-width: 400px) {
+  .block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 h2 {
+    margin: 0;
+    display: block;
+  }
+}
+.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .all-catalog {
   float: left;
   margin: 20px;
   color: deepskyblue;
@@ -1045,18 +1061,27 @@ i.fa.fa-user-o {
   border-bottom: 1px dashed deepskyblue;
   text-decoration: none;
 }
-.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 a:hover {
+.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .all-catalog:hover {
   color: #30b5d8;
-  border-bottom: 1px dashed #30b5d8;
+  border-bottom: #30b5d8;
+}
+@media (max-width: 1060px) {
+  .block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .all-catalog {
+    float: none;
+    display: block;
+    margin-bottom: 10px;
+    padding: 0;
+    border-bottom: none;
+  }
 }
 .block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .radio-point {
-  margin: 50px 0 0 25px;
+  margin: 50px 0 0 -200px;
   padding: 5px;
   display: inline-block;
 }
 @media (max-width: 1060px) {
   .block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .radio-point {
-    width: 75%;
+    width: 50%;
     margin: 20px 10%;
   }
 }
@@ -1064,6 +1089,7 @@ i.fa.fa-user-o {
   float: left;
   transform: scale(1.3);
   margin-left: 15px;
+  text-align: center;
 }
 @media (max-width: 1060px) {
   .block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .radio-point input {
@@ -1075,7 +1101,19 @@ i.fa.fa-user-o {
     margin: 0;
   }
 }
-.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .radio-point .scroll-left {
+.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .slide-scroll1 {
+  float: right;
+  position: relative;
+  margin: 30px 0px 0 10px;
+}
+@media (max-width: 1060px) {
+  .block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .slide-scroll1 {
+    float: none;
+    margin: 0;
+    top: -65px;
+  }
+}
+.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .slide-scroll1 .scroll-left1 {
   width: 50px;
   height: 50px;
   margin: 0;
@@ -1083,8 +1121,9 @@ i.fa.fa-user-o {
   border-bottom: none;
   float: left;
   margin-right: 5px;
+  padding-bottom: 3px;
 }
-.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .radio-point .scroll-left::before {
+.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .slide-scroll1 .scroll-left1::before {
   content: " ";
   position: absolute;
   width: 0px;
@@ -1095,7 +1134,7 @@ i.fa.fa-user-o {
   top: 7px;
   left: 10px;
 }
-.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .radio-point .scroll-left::after {
+.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .slide-scroll1 .scroll-left1::after {
   content: " ";
   position: absolute;
   width: 0px;
@@ -1106,15 +1145,16 @@ i.fa.fa-user-o {
   top: 12px;
   left: 15px;
 }
-.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .radio-point .scroll-right {
+.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .slide-scroll1 .scroll-right1 {
   float: right;
+  padding-bottom: 3px;
   width: 50px;
   height: 50px;
   margin: 0;
   background-color: black;
   border-bottom: none;
 }
-.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .radio-point .scroll-right::before {
+.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .slide-scroll1 .scroll-right1::before {
   content: " ";
   position: absolute;
   width: 0px;
@@ -1125,7 +1165,7 @@ i.fa.fa-user-o {
   top: 7px;
   right: 10px;
 }
-.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .radio-point .scroll-right::after {
+.block-games2 .wrapper-games2 .chapter-games2 .chapter-games-block2 .slide-scroll1 .scroll-right1::after {
   content: " ";
   position: absolute;
   width: 0px;
