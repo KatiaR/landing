@@ -9,6 +9,8 @@
 }
 
 @import url('./header.less');
+@import url('./style-icons.less');
+@import url('./variables.less');
 
 @font-face {
   font-family: 'icomoon';
@@ -1017,7 +1019,7 @@ i.fa.fa-user-o {
     position: relative;
     border-top: 0.1px solid transparent;
     border-bottom: 0.1px solid transparent;
-    height: 500px;
+
     @media (max-width: 1124px) {
       width: 100%;
       margin-left: 0;
@@ -1168,6 +1170,39 @@ i.fa.fa-user-o {
             }
           }
         }
+      }
+    }
+    .wrapper-g-content2 {
+      margin: 20px 60px;
+      .col2 () {
+        float: left;
+        margin-left: 10px;
+        width: 45%;
+        position: relative;
+        & img {
+          float: left;
+          margin-right: 5px;
+          width: 50%;
+          border-bottom: 5px solid red;
+        }
+        & p {
+          padding: 0 5px 0 10px;
+          font-family: Open Sans;
+        }
+        & h2 {
+          font-family: Open Sans;
+          margin: 0;
+        }
+        .icon-play3:before {
+          content: "\ea1c";
+          position: absolute;
+          top:0;
+          left: 0;
+        }
+        }
+      .col21, .col22,.col23,.col24,.col25,.col26 {
+        .col2;
+        margin: 15px;
       }
     }
   }

@@ -94,6 +94,35 @@ header .register:hover {
 }
 @font-face {
   font-family: 'icomoon';
+  src: url('fonts/icomoon.ttf?gc1bfh') format('truetype'), url('fonts/icomoon.woff?gc1bfh') format('woff'), url('fonts/icomoon.svg?gc1bfh#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-play3:before {
+  content: "\ea1c";
+}
+@font-face {
+  font-family: 'icomoon';
   src: url('../fonts/icomoon.woff') format('woff');
   font-weight: normal;
   font-style: normal;
@@ -1006,7 +1035,6 @@ i.fa.fa-user-o {
   position: relative;
   border-top: 0.1px solid transparent;
   border-bottom: 0.1px solid transparent;
-  height: 500px;
 }
 @media (max-width: 1124px) {
   .block-games2 .wrapper-games2 {
@@ -1175,4 +1203,59 @@ i.fa.fa-user-o {
   border-bottom: 15px solid transparent;
   top: 12px;
   right: 15px;
+}
+.block-games2 .wrapper-games2 .wrapper-g-content2 {
+  margin: 20px 60px;
+}
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col21,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col22,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col23,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col24,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col25,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col26 {
+  float: left;
+  margin-left: 10px;
+  width: 45%;
+  position: relative;
+  margin: 15px;
+}
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col21 img,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col22 img,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col23 img,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col24 img,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col25 img,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col26 img {
+  float: left;
+  margin-right: 5px;
+  width: 50%;
+  border-bottom: 5px solid red;
+}
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col21 p,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col22 p,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col23 p,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col24 p,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col25 p,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col26 p {
+  padding: 0 5px 0 10px;
+  font-family: Open Sans;
+}
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col21 h2,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col22 h2,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col23 h2,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col24 h2,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col25 h2,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col26 h2 {
+  font-family: Open Sans;
+  margin: 0;
+}
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col21 .icon-play3:before,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col22 .icon-play3:before,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col23 .icon-play3:before,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col24 .icon-play3:before,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col25 .icon-play3:before,
+.block-games2 .wrapper-games2 .wrapper-g-content2 .col26 .icon-play3:before {
+  content: "\ea1c";
+  position: absolute;
+  top: 0;
+  left: 0;
 }
