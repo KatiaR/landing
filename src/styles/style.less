@@ -1053,11 +1053,11 @@ i.fa.fa-user-o {
             float: none;
           }
           @media (max-width: 400px) {
-             margin: 0;
+            margin: 0;
             display: block;
           }
         }
-        .all-catalog  {
+        .all-catalog {
           float: left;
           margin: 20px;
           color: deepskyblue;
@@ -1066,15 +1066,14 @@ i.fa.fa-user-o {
           text-decoration: none;
           &:hover {
             color: #30b5d8;
-            border-bottom:  #30b5d8;
+            border-bottom: #30b5d8;
           }
           @media (max-width: 1060px) {
-           float: none;
+            float: none;
             display: block;
             margin-bottom: 10px;
             padding: 0;
             border-bottom: none;
-
 
           }
         }
@@ -1093,7 +1092,7 @@ i.fa.fa-user-o {
             text-align: center;
             @media (max-width: 1060px) {
               float: none;
-                          }
+            }
             @media (max-width: 640px) {
               margin: 0;
             }
@@ -1174,17 +1173,26 @@ i.fa.fa-user-o {
     }
     .wrapper-g-content2 {
       margin: 20px 60px;
+
       .col2 () {
         float: left;
         margin-left: 10px;
         width: 45%;
         position: relative;
+        background-color: white;
+        @media (max-width: 1230px) {
+          font-size: 0.8em;
+        }
+        @media (max-width: 960px) {
+         width: 100%;
+        }
+      }
         & img {
           float: left;
           margin-right: 5px;
           width: 50%;
           border-bottom: 5px solid red;
-        }
+          }
         & p {
           padding: 0 5px 0 10px;
           font-family: Open Sans;
@@ -1192,18 +1200,21 @@ i.fa.fa-user-o {
         & h2 {
           font-family: Open Sans;
           margin: 0;
+          padding-left: 10px;
         }
         .icon-play3:before {
           content: "\ea1c";
           position: absolute;
-          top:0;
+          top: 0;
           left: 0;
         }
+
+        .col21, .col22, .col23, .col24, .col25, .col26 {
+          .col2;
+          margin: 15px;
         }
-      .col21, .col22,.col23,.col24,.col25,.col26 {
-        .col2;
-        margin: 15px;
+
       }
+
     }
   }
-}
