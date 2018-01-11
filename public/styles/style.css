@@ -128,6 +128,12 @@ header .register:hover {
   font-style: normal;
 }
 @font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon-icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'Open Sans';
   src: url('../fonts/OpenSans-Regular.ttf') format('truetype');
   font-weight: normal;
@@ -161,6 +167,29 @@ body {
 }
 .icon-menu:before {
   content: "\e9bd";
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-play3:before {
+  content: "\ea1c";
 }
 body {
   margin: 0;
@@ -1222,11 +1251,34 @@ i.fa.fa-user-o {
   margin: 0;
   padding-left: 10px;
 }
-.block-games2 .wrapper-games2 .wrapper-g-content2 .icon-play3:before {
-  content: "\ea1c";
+.block-games2 .wrapper-games2 .wrapper-g-content2 .play-botton {
+  width: 70px;
+  height: 70px;
+  background-color: red;
   position: absolute;
   top: 0;
   left: 0;
+}
+@media (max-width: 1060px) {
+  .block-games2 .wrapper-games2 .wrapper-g-content2 .play-botton {
+    width: 40px;
+    height: 40px;
+  }
+}
+.block-games2 .wrapper-games2 .wrapper-g-content2 .play-botton .icon-play3:before {
+  content: "\ea1c";
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+@media (max-width: 1060px) {
+  .block-games2 .wrapper-games2 .wrapper-g-content2 .play-botton .icon-play3:before {
+    top: 6px;
+    left: 6px;
+    font-size: 30px;
+  }
 }
 .block-games2 .wrapper-games2 .wrapper-g-content2 .col21,
 .block-games2 .wrapper-games2 .wrapper-g-content2 .col22,

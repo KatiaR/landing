@@ -18,6 +18,12 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'icomoon';
+  src: url('../fonts/icomoon-icons.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'Open Sans';
@@ -58,6 +64,29 @@ body {
 
 .icon-menu:before {
   content: "\e9bd";
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-user:before {
+  content: "\e971";
+}
+.icon-menu:before {
+  content: "\e9bd";
+}
+.icon-play3:before {
+  content: "\ea1c";
 }
 
 body {
@@ -1202,11 +1231,30 @@ i.fa.fa-user-o {
           margin: 0;
           padding-left: 10px;
         }
-        .icon-play3:before {
-          content: "\ea1c";
+        .play-botton {
+          width: 70px;
+          height: 70px;
+          background-color: red;
           position: absolute;
           top: 0;
           left: 0;
+          @media (max-width: 1060px) {
+            width: 40px;
+            height: 40px;
+          }
+          .icon-play3:before {
+            content: "\ea1c";
+            color: white;
+            font-size: 50px;
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            @media (max-width: 1060px) {
+              top: 6px;
+              left: 6px;
+              font-size: 30px;
+            }
+          }
         }
 
         .col21, .col22, .col23, .col24, .col25, .col26 {
