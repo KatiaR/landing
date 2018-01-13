@@ -18,6 +18,7 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'icomoon';
   src: url('../fonts/icomoon-icons.woff') format('woff');
@@ -65,6 +66,7 @@ body {
 .icon-menu:before {
   content: "\e9bd";
 }
+
 [class^="icon-"],
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
@@ -79,12 +81,15 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
 .icon-user:before {
   content: "\e971";
 }
+
 .icon-menu:before {
   content: "\e9bd";
 }
+
 .icon-play3:before {
   content: "\ea1c";
 }
@@ -1213,56 +1218,112 @@ i.fa.fa-user-o {
           font-size: 0.8em;
         }
         @media (max-width: 960px) {
-         width: 100%;
+          width: 100%;
         }
       }
-        & img {
-          float: left;
-          margin-right: 5px;
-          width: 50%;
-          border-bottom: 5px solid red;
-          }
-        & p {
-          padding: 0 5px 0 10px;
-          font-family: Open Sans;
+      & img {
+        float: left;
+        margin-right: 5px;
+        width: 50%;
+        border-bottom: 5px solid red;
+      }
+      & p {
+        padding: 0 5px 0 10px;
+        font-family: Open Sans;
+      }
+      & h2 {
+        font-family: Open Sans;
+        margin: 0;
+        padding-left: 10px;
+      }
+      .play-botton {
+        width: 70px;
+        height: 70px;
+        background-color: red;
+        position: absolute;
+        top: 0;
+        left: 0;
+        @media (max-width: 1060px) {
+          width: 40px;
+          height: 40px;
         }
-        & h2 {
-          font-family: Open Sans;
-          margin: 0;
-          padding-left: 10px;
-        }
-        .play-botton {
-          width: 70px;
-          height: 70px;
-          background-color: red;
+        .icon-play3:before {
+          content: "\ea1c";
+          color: white;
+          font-size: 50px;
           position: absolute;
-          top: 0;
-          left: 0;
+          top: 10px;
+          left: 10px;
           @media (max-width: 1060px) {
-            width: 40px;
-            height: 40px;
-          }
-          .icon-play3:before {
-            content: "\ea1c";
-            color: white;
-            font-size: 50px;
-            position: absolute;
-            top: 10px;
-            left: 10px;
-            @media (max-width: 1060px) {
-              top: 6px;
-              left: 6px;
-              font-size: 30px;
-            }
+            top: 6px;
+            left: 6px;
+            font-size: 30px;
           }
         }
+      }
 
-        .col21, .col22, .col23, .col24, .col25, .col26 {
-          .col2;
-          margin: 15px;
-        }
-
+      .col21, .col22, .col23, .col24, .col25, .col26 {
+        .col2;
+        margin: 15px;
       }
 
     }
+
   }
+}
+
+.wrapper-articles {
+  margin: 20px 160px;
+  @media (max-width: 550px) {
+    margin: 20px 60px;
+  }
+  .header-articles {
+    @media (max-width: 800px) {
+      text-align: center;
+    }
+    h2 {
+      margin: 15px 30px 20px 5px;
+      padding-left: 10px;
+      float: left;
+      font: 800 35px Open Sans Extra Bold, sans-serif;
+      @media (max-width: 800px) {
+        float: none;
+          margin: 0;
+      }
+    }
+    a {
+      border-bottom: 1px dashed deepskyblue;
+      text-decoration: none;
+      margin: 35px 30px 20px 5px;
+      display: inline-block;
+      color: deepskyblue;
+      &:hover {
+        color: dodgerblue;
+        border-bottom: none;
+      }
+      @media (max-width: 800px) {
+        margin: 0;
+
+      }
+    }
+    button {
+      float: right;
+      margin: 35px -25px 20px 5px;
+      border-radius: 50px;
+      font-size: 15px;
+      padding: 5px 15px;
+      background-color: #30b5d8;
+      color: white;
+      border: transparent;
+      &:hover {
+        background-color: lightblue;
+      }
+      @media (max-width: 800px) {
+        float: none;
+        display: block;
+        margin: 15px auto;
+      }
+    }
+    }
+  }
+
