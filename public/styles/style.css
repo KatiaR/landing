@@ -1314,12 +1314,15 @@ i.fa.fa-user-o {
   }
 }
 .wrapper-articles {
-  margin: 20px 160px;
+  margin: 20px 135px;
 }
 @media (max-width: 550px) {
   .wrapper-articles {
     margin: 20px 60px;
   }
+}
+.wrapper-articles .header-articles {
+  margin-bottom: 10px;
 }
 @media (max-width: 800px) {
   .wrapper-articles .header-articles {
@@ -1327,7 +1330,7 @@ i.fa.fa-user-o {
   }
 }
 .wrapper-articles .header-articles h2 {
-  margin: 15px 30px 20px 5px;
+  margin: 15px 30px 0px 5px;
   padding-left: 10px;
   float: left;
   font: 800 35px Open Sans Extra Bold, sans-serif;
@@ -1341,7 +1344,7 @@ i.fa.fa-user-o {
 .wrapper-articles .header-articles a {
   border-bottom: 1px dashed deepskyblue;
   text-decoration: none;
-  margin: 35px 30px 20px 5px;
+  margin: 35px 30px 0px 5px;
   display: inline-block;
   color: deepskyblue;
 }
@@ -1356,7 +1359,7 @@ i.fa.fa-user-o {
 }
 .wrapper-articles .header-articles button {
   float: right;
-  margin: 35px -25px 20px 5px;
+  margin: 35px 15px 0px 5px;
   border-radius: 50px;
   font-size: 15px;
   padding: 5px 15px;
@@ -1373,4 +1376,48 @@ i.fa.fa-user-o {
     display: block;
     margin: 15px auto;
   }
+}
+.wrapper-articles .description-article .date {
+  width: 70px;
+  height: 70px;
+  background-color: dodgerblue;
+  color: white;
+  float: left;
+  padding: 5px 10px;
+  box-sizing: border-box;
+}
+.wrapper-articles .description-article .date span {
+  padding: 10px 8px 0;
+  font-weight: 900;
+  font-size: 30px;
+}
+.wrapper-articles .description-article .colrow1,
+.wrapper-articles .description-article .colrow2,
+.wrapper-articles .description-article .colrow3,
+.wrapper-articles .description-article .colrow4,
+.wrapper-articles .description-article .colrow5,
+.wrapper-articles .description-article .colrow6 {
+  border: 2px solid #ededed;
+  float: left;
+  margin: 15px;
+  width: 30%;
+  height: 200px;
+}
+.wrapper-articles .description-article .colrow1 img,
+.wrapper-articles .description-article .colrow2 img,
+.wrapper-articles .description-article .colrow3 img,
+.wrapper-articles .description-article .colrow4 img,
+.wrapper-articles .description-article .colrow5 img,
+.wrapper-articles .description-article .colrow6 img {
+  float: left;
+  margin: 0px 5px 0px 0px;
+}
+.wrapper-articles .description-article .colrow1 .imgdate,
+.wrapper-articles .description-article .colrow2 .imgdate,
+.wrapper-articles .description-article .colrow3 .imgdate,
+.wrapper-articles .description-article .colrow4 .imgdate,
+.wrapper-articles .description-article .colrow5 .imgdate,
+.wrapper-articles .description-article .colrow6 .imgdate {
+  margin: 10px 0 0 -15px;
+  float: left;
 }
