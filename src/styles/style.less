@@ -1335,7 +1335,7 @@ i.fa.fa-user-o {
         float: left;
         margin: 0px 5px 0px 0px;
       }
-    }
+
       .date {
         width: 70px;
         height: 70px;
@@ -1349,18 +1349,53 @@ i.fa.fa-user-o {
           font-weight: 900;
           font-size: 30px;
         }
+        p {
+          margin: 0 auto;
+          text-align: center;
+        }
+      }
+      .views-data {
+        background-color: #dfdccb;
+        border-top: 1px solid gray;
+        height: 70px;
+        width: 55%;
+        position: absolute;
+        left: 130px;
 
+        .icon-bubble2:before {
+          content: "\e96e";
+        }
+        .icon-rocket:before {
+          content: "\e9a5";
+        }
+        h2 {
+          margin: 0 10px;
+          color: dodgerblue;
+        }
+        .icondate {
+          margin-left: 5px;
+          span {
+            margin: 5px;
+            color: gray;
+            font-size: small;
+          }
+        }
+      }
       }
 
     .colrow1, .colrow2, .colrow3, .colrow4, .colrow5, .colrow6 {
       .colrowcom;
       width: 30%;
       height: 200px;
+      position: relative;
+      @media (max-width: 1300px) {
+        width: 45%;
+      }
       .imgdate {
         margin: 10px 0 0 -15px;
         float: left;
       }
-    }
+         }
   }
 }
 
