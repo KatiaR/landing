@@ -364,6 +364,11 @@ hr {
   display: inline-block;
   margin-left: 50px;
 }
+@media (max-width: 850px) {
+  .chapter_header h2 {
+    margin: 0;
+  }
+}
 .block-search {
   width: 45%;
   float: right;
@@ -1316,9 +1321,14 @@ i.fa.fa-user-o {
 .wrapper-articles {
   margin: 20px 135px;
 }
-@media (max-width: 550px) {
+@media (max-width: 800px) {
   .wrapper-articles {
     margin: 20px 60px;
+  }
+}
+@media (max-width: 550px) {
+  .wrapper-articles {
+    margin: 10px 0px 10PX 0;
   }
 }
 .wrapper-articles .header-articles {
@@ -1385,9 +1395,9 @@ i.fa.fa-user-o {
 .wrapper-articles .description-article .colrow6 {
   border: 2px solid #ededed;
   float: left;
-  margin: 15px;
+  margin: 15px 15px;
   width: 30%;
-  height: 200px;
+  height: 450px;
   position: relative;
 }
 .wrapper-articles .description-article .colrow1 img,
@@ -1469,6 +1479,17 @@ i.fa.fa-user-o {
 .wrapper-articles .description-article .colrow6 .views-data h2 {
   margin: 0 10px;
   color: dodgerblue;
+  font-size: 20px;
+}
+@media (max-width: 400px) {
+  .wrapper-articles .description-article .colrow1 .views-data h2,
+  .wrapper-articles .description-article .colrow2 .views-data h2,
+  .wrapper-articles .description-article .colrow3 .views-data h2,
+  .wrapper-articles .description-article .colrow4 .views-data h2,
+  .wrapper-articles .description-article .colrow5 .views-data h2,
+  .wrapper-articles .description-article .colrow6 .views-data h2 {
+    font-size: medium;
+  }
 }
 .wrapper-articles .description-article .colrow1 .views-data .icondate,
 .wrapper-articles .description-article .colrow2 .views-data .icondate,
@@ -1488,6 +1509,15 @@ i.fa.fa-user-o {
   color: gray;
   font-size: small;
 }
+.wrapper-articles .description-article .colrow1:hover,
+.wrapper-articles .description-article .colrow2:hover,
+.wrapper-articles .description-article .colrow3:hover,
+.wrapper-articles .description-article .colrow4:hover,
+.wrapper-articles .description-article .colrow5:hover,
+.wrapper-articles .description-article .colrow6:hover {
+  background-color: skyblue;
+  color: white;
+}
 @media (max-width: 1300px) {
   .wrapper-articles .description-article .colrow1,
   .wrapper-articles .description-article .colrow2,
@@ -1498,6 +1528,17 @@ i.fa.fa-user-o {
     width: 45%;
   }
 }
+@media (max-width: 980px) {
+  .wrapper-articles .description-article .colrow1,
+  .wrapper-articles .description-article .colrow2,
+  .wrapper-articles .description-article .colrow3,
+  .wrapper-articles .description-article .colrow4,
+  .wrapper-articles .description-article .colrow5,
+  .wrapper-articles .description-article .colrow6 {
+    width: 90%;
+    height: auto;
+  }
+}
 .wrapper-articles .description-article .colrow1 .imgdate,
 .wrapper-articles .description-article .colrow2 .imgdate,
 .wrapper-articles .description-article .colrow3 .imgdate,
@@ -1505,5 +1546,33 @@ i.fa.fa-user-o {
 .wrapper-articles .description-article .colrow5 .imgdate,
 .wrapper-articles .description-article .colrow6 .imgdate {
   margin: 10px 0 0 -15px;
-  float: left;
+  width: 100%;
+}
+@media (max-width: 550px) {
+  .wrapper-articles .description-article .colrow1 .imgdate,
+  .wrapper-articles .description-article .colrow2 .imgdate,
+  .wrapper-articles .description-article .colrow3 .imgdate,
+  .wrapper-articles .description-article .colrow4 .imgdate,
+  .wrapper-articles .description-article .colrow5 .imgdate,
+  .wrapper-articles .description-article .colrow6 .imgdate {
+    margin: 10px 0 0 -10px;
+  }
+}
+.wrapper-articles .description-article .colrow1 .col-content h3,
+.wrapper-articles .description-article .colrow2 .col-content h3,
+.wrapper-articles .description-article .colrow3 .col-content h3,
+.wrapper-articles .description-article .colrow4 .col-content h3,
+.wrapper-articles .description-article .colrow5 .col-content h3,
+.wrapper-articles .description-article .colrow6 .col-content h3 {
+  margin: 15px 5px 10px 25px;
+  color: black;
+}
+.wrapper-articles .description-article .colrow1 .col-content p,
+.wrapper-articles .description-article .colrow2 .col-content p,
+.wrapper-articles .description-article .colrow3 .col-content p,
+.wrapper-articles .description-article .colrow4 .col-content p,
+.wrapper-articles .description-article .colrow5 .col-content p,
+.wrapper-articles .description-article .colrow6 .col-content p {
+  margin: 15px 5px 0 25px;
+  text-overflow: ellipsis;
 }

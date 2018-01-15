@@ -304,6 +304,10 @@ hr {
 .chapter_header h2 {
   display: inline-block;
   margin-left: 50px;
+  @media (max-width: 850px) {
+    margin: 0;
+  }
+
 }
 
 .block-search {
@@ -1274,9 +1278,13 @@ i.fa.fa-user-o {
 
 .wrapper-articles {
   margin: 20px 135px;
-  @media (max-width: 550px) {
+  @media (max-width: 800px) {
     margin: 20px 60px;
   }
+  @media (max-width: 550px) {
+    margin: 10px 0px 10PX 0;
+  }
+
   .header-articles {
     margin-bottom: 10px;
     @media (max-width: 800px) {
@@ -1330,7 +1338,7 @@ i.fa.fa-user-o {
     .colrowcom () {
       border: 2px solid #ededed;
       float: left;
-      margin: 15px;
+      margin: 15px 15px;
       & img {
         float: left;
         margin: 0px 5px 0px 0px;
@@ -1371,6 +1379,10 @@ i.fa.fa-user-o {
         h2 {
           margin: 0 10px;
           color: dodgerblue;
+          font-size: 20px;
+          @media (max-width: 400px) {
+            font-size: medium;
+          }
         }
         .icondate {
           margin-left: 5px;
@@ -1381,21 +1393,44 @@ i.fa.fa-user-o {
           }
         }
       }
-      }
+    }
 
     .colrow1, .colrow2, .colrow3, .colrow4, .colrow5, .colrow6 {
       .colrowcom;
       width: 30%;
-      height: 200px;
+      height: 450px;
       position: relative;
+      &:hover {
+        background-color: skyblue;
+        color: white;
+      }
+
       @media (max-width: 1300px) {
         width: 45%;
       }
+      @media (max-width: 980px) {
+        width: 90%;
+        height: auto;
+      }
       .imgdate {
         margin: 10px 0 0 -15px;
-        float: left;
+        width: 100%;
+        @media (max-width: 550px) {
+          margin: 10px 0 0 -10px;
+        }
       }
-         }
+      .col-content {
+        h3 {
+          margin: 15px 5px 10px 25px;
+          color: black;
+        }
+        p {
+          margin: 15px 5px 0 25px;
+          text-overflow: ellipsis;
+
+        }
+      }
+    }
   }
 }
 
