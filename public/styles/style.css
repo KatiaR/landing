@@ -1576,3 +1576,133 @@ i.fa.fa-user-o {
   margin: 15px 5px 0 25px;
   text-overflow: ellipsis;
 }
+.wrapper-footer {
+  background-color: #dfdccb;
+  position: relative;
+}
+.wrapper-footer .p-ages {
+  width: 90px;
+  height: 45px;
+  border: 5px solid gray;
+  position: absolute;
+  right: 90px;
+  top: 40px;
+  background-color: transparent;
+  font-size: 30px;
+  text-align: center;
+}
+.wrapper-footer .dark-block {
+  background-color: #33282c;
+  border-top: 10px solid #f0cb59;
+  width: 50%;
+  margin-left: 80px;
+  margin-bottom: 30px;
+  position: relative;
+}
+.wrapper-footer .dark-block img {
+  width: 75%;
+  position: absolute;
+  right: -230px;
+  bottom: -75px;
+}
+.wrapper-footer .dark-block .icon-accessibility:before {
+  content: "\e9b2";
+  font-size: 50px;
+  color: black;
+  position: absolute;
+  background-color: #f0cb59;
+  margin: -10px 5px 0 -15px;
+  padding: 10px 5px 5px;
+}
+.wrapper-footer .dark-block .icon-twitter:before {
+  content: "\ea96";
+  position: absolute;
+  font-size: 30px;
+  top: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  left: 60px;
+  background-color: lightskyblue;
+}
+.wrapper-footer .dark-block .icon-facebook:before {
+  content: "\ea90";
+  position: absolute;
+  font-size: 30px;
+  top: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  left: 120px;
+  background-color: blue;
+}
+.wrapper-footer .dark-block .icon-renren:before {
+  content: "\ea99";
+  position: absolute;
+  font-size: 30px;
+  top: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  left: 180px;
+  background-color: hotpink;
+}
+.wrapper-footer .dark-block .icon-google:before {
+  content: "\ea88";
+  position: absolute;
+  font-size: 30px;
+  top: 10px;
+  padding: 8px;
+  border-radius: 10px;
+  left: 240px;
+  background-color: orange;
+}
+.wrapper-footer .dark-block h4 {
+  width: 60%;
+  margin: 80px 30px 30px;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+}
+.wrapper-footer .dark-block p {
+  width: 60%;
+  margin: 0px 30px;
+  color: white;
+  font-size: 0.8em;
+  padding-bottom: 20px;
+}
+.wrapper-footer .dark-block button {
+  background-color: lightskyblue;
+  color: white;
+  border: none;
+  font-size: 20px;
+  width: 30%;
+  height: 15%;
+  left: 160px;
+  position: absolute;
+  bottom: -20PX;
+}
+.wrapper-footer .permission-info {
+  float: right;
+  width: 30%;
+  font-size: 0.8em;
+  margin: 10px 10px;
+  position: absolute;
+  right: 15px;
+  top: 215px;
+}
+.wrapper-footer .last-decor {
+  text-align: center;
+  font-size: 0;
+  position: relative;
+}
+.wrapper-footer .last-decor .decor-left {
+  border: 7.5px solid #ff4c36;
+  position: absolute;
+  width: 40%;
+  bottom: 0px;
+}
+.wrapper-footer .last-decor .decor-right {
+  border: 7.5px solid #30b5d8;
+  position: absolute;
+  width: 35%;
+  bottom: 0px;
+  left: 63.8%;
+}
