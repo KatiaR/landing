@@ -1591,6 +1591,11 @@ i.fa.fa-user-o {
   font-size: 30px;
   text-align: center;
 }
+@media (max-width: 660px) {
+  .wrapper-footer .p-ages {
+    display: none;
+  }
+}
 .wrapper-footer .dark-block {
   background-color: #33282c;
   border-top: 10px solid #f0cb59;
@@ -1599,11 +1604,29 @@ i.fa.fa-user-o {
   margin-bottom: 30px;
   position: relative;
 }
+@media (max-width: 660px) {
+  .wrapper-footer .dark-block {
+    margin-left: 20px;
+    width: 90%;
+  }
+}
 .wrapper-footer .dark-block img {
   width: 75%;
   position: absolute;
   right: -230px;
   bottom: -75px;
+}
+@media (max-width: 1100px) {
+  .wrapper-footer .dark-block img {
+    width: 55%;
+    right: -145px;
+    bottom: -55px;
+  }
+}
+@media (max-width: 920px) {
+  .wrapper-footer .dark-block img {
+    display: none;
+  }
 }
 .wrapper-footer .dark-block .icon-accessibility:before {
   content: "\e9b2";
@@ -1624,6 +1647,12 @@ i.fa.fa-user-o {
   left: 60px;
   background-color: lightskyblue;
 }
+@media (max-width: 660px) {
+  .wrapper-footer .dark-block .icon-twitter:before {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
 .wrapper-footer .dark-block .icon-facebook:before {
   content: "\ea90";
   position: absolute;
@@ -1633,6 +1662,17 @@ i.fa.fa-user-o {
   border-radius: 10px;
   left: 120px;
   background-color: blue;
+}
+@media (max-width: 660px) {
+  .wrapper-footer .dark-block .icon-facebook:before {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+@media (max-width: 660px) {
+  .wrapper-footer .dark-block .icon-facebook:before {
+    left: 100px;
+  }
 }
 .wrapper-footer .dark-block .icon-renren:before {
   content: "\ea99";
@@ -1644,6 +1684,17 @@ i.fa.fa-user-o {
   left: 180px;
   background-color: hotpink;
 }
+@media (max-width: 660px) {
+  .wrapper-footer .dark-block .icon-renren:before {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+@media (max-width: 660px) {
+  .wrapper-footer .dark-block .icon-renren:before {
+    left: 140px;
+  }
+}
 .wrapper-footer .dark-block .icon-google:before {
   content: "\ea88";
   position: absolute;
@@ -1653,6 +1704,17 @@ i.fa.fa-user-o {
   border-radius: 10px;
   left: 240px;
   background-color: orange;
+}
+@media (max-width: 660px) {
+  .wrapper-footer .dark-block .icon-google:before {
+    font-size: 20px;
+    padding: 5px;
+  }
+}
+@media (max-width: 660px) {
+  .wrapper-footer .dark-block .icon-google:before {
+    left: 180px;
+  }
 }
 .wrapper-footer .dark-block h4 {
   width: 60%;
@@ -1679,30 +1741,69 @@ i.fa.fa-user-o {
   position: absolute;
   bottom: -20PX;
 }
+@media (max-width: 960px) {
+  .wrapper-footer .dark-block button {
+    bottom: -35PX;
+    font-size: 15px;
+    left: 200px;
+  }
+}
+@media (max-width: 960px) {
+  .wrapper-footer .dark-block button {
+    left: 150px;
+  }
+}
 .wrapper-footer .permission-info {
-  float: right;
-  width: 30%;
+  width: 20%;
   font-size: 0.8em;
-  margin: 10px 10px;
+  margin: 5px 10px;
   position: absolute;
-  right: 15px;
-  top: 215px;
+  right: 0px;
+  top: 145px;
 }
-.wrapper-footer .last-decor {
-  text-align: center;
-  font-size: 0;
+@media (max-width: 920px) {
+  .wrapper-footer .permission-info {
+    width: 30%;
+    top: 120px;
+  }
+}
+@media (max-width: 660px) {
+  .wrapper-footer .permission-info {
+    display: none;
+  }
+}
+.wrapper-footer .left-right-decor {
+  height: 10px;
   position: relative;
+  padding-top: 35px;
+  width: 100%;
 }
-.wrapper-footer .last-decor .decor-left {
+.wrapper-footer .left-right-decor .decor-left {
   border: 7.5px solid #ff4c36;
   position: absolute;
   width: 40%;
   bottom: 0px;
 }
-.wrapper-footer .last-decor .decor-right {
+@media (max-width: 660px) {
+  .wrapper-footer .left-right-decor .decor-left {
+    border: 3.5px solid #ff4c36;
+  }
+}
+.wrapper-footer .left-right-decor .decor-right {
   border: 7.5px solid #30b5d8;
   position: absolute;
   width: 35%;
   bottom: 0px;
-  left: 63.8%;
+  right: 0;
+}
+@media (max-width: 660px) {
+  .wrapper-footer .left-right-decor .decor-right {
+    border: 3.5px solid #ff4c36;
+  }
+}
+.wrapper-footer .left-right-decor img {
+  position: absolute;
+  left: 30%;
+  bottom: 0;
+  width: 45%;
 }
