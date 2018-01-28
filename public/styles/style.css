@@ -120,60 +120,241 @@ header {
   display: flex;
   flex-wrap: wrap;
   background-color: white;
+  justify-content: space-between;
 }
-header .logo {
+@media (max-width: 650px) {
+  header {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+header .h-posotion {
+  display: flex;
+  align-items: center;
+}
+header .h-posotion .logo {
   background-color: #30b5d8;
   padding: 10px 30px;
-  margin: 0 10px 0 100px;
-  height: 30%;
+  margin: 0 10px 0 70px;
 }
-header nav .menulist {
+@media (max-width: 500px) {
+  header .h-posotion .logo {
+    padding: 10px 5px;
+    margin: 0 10px 0 5px;
+  }
+}
+@media (max-width: 1070px) {
+  header .h-posotion nav {
+    z-index: 100;
+  }
+  header .h-posotion nav #menucheck:checked + .list_routes {
+    display: flex;
+    flex-direction: column;
+  }
+}
+header .h-posotion nav .menulist {
   display: none;
 }
-header nav #menucheck {
+@media (max-width: 1070px) {
+  header .h-posotion nav .menulist {
+    cursor: pointer;
+    display: flex;
+    margin: 11px 20px 11px 10px;
+    font-size: 2em;
+    font-weight: 600;
+  }
+}
+@media (max-width: 500px) {
+  header .h-posotion nav .menulist {
+    font-size: 1.5em;
+  }
+}
+header .h-posotion nav #menucheck {
   display: none;
 }
-header .list_routes {
+header .h-posotion .list_routes {
   display: flex;
   flex-wrap: wrap;
   font-size: 1em;
   cursor: pointer;
   list-style-type: none;
-  padding: 0;
+  padding: 0 15px;
 }
-header .list_routes a {
+@media (max-width: 1070px) {
+  header .h-posotion .list_routes {
+    display: none;
+    position: absolute;
+    background: #30b5d8;
+  }
+}
+header .h-posotion .list_routes a {
   text-decoration: none;
   color: gray;
   padding: 0 13px;
   font-size: 1.3em;
 }
-header .box-search {
+@media (max-width: 1070px) {
+  header .h-posotion .list_routes a {
+    padding: 5px 13px;
+    margin-top: 0px;
+  }
+}
+header .h-posotion .list_routes a:hover {
+  color: #30b5d8;
+}
+@media (max-width: 1070px) {
+  header .h-posotion .list_routes a:hover {
+    color: white;
+  }
+}
+header .h-posotion .box-search {
   width: 75px;
   height: 70px;
   position: relative;
   background-color: lightgray;
 }
-header .box-search .icon {
+@media (max-width: 500px) {
+  header .h-posotion .box-search {
+    width: 50px;
+  }
+}
+header .h-posotion .box-search .icon {
   position: absolute;
   top: 15px;
   left: 25px;
   font-size: 20px;
 }
+@media (max-width: 500px) {
+  header .h-posotion .box-search .icon {
+    left: 15px;
+  }
+}
 header .checkenter {
   display: flex;
+  align-items: center;
+  position: relative;
+}
+@media (max-width: 650px) {
+  header .checkenter #menucheck2:checked + .reg {
+    display: flex;
+  }
+}
+@media (max-width: 500px) {
+  header .checkenter span {
+    font-size: 1.5em;
+  }
 }
 header .checkenter .regform {
   display: none;
+  padding: 20px;
+}
+@media (max-width: 650px) {
+  header .checkenter .regform {
+    display: flex;
+    cursor: pointer;
+    position: relative;
+  }
+}
+@media (max-width: 500px) {
+  header .checkenter .regform {
+    padding: 10px;
+  }
 }
 header .checkenter #menucheck2 {
   display: none;
 }
-/*
-header {
+header .checkenter .reg {
+  display: flex;
+}
+@media (max-width: 650px) {
+  header .checkenter .reg {
+    display: none;
+    flex-direction: column-reverse;
+  }
+}
+header .checkenter .reg .button-decoration {
+  height: 40px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+}
+@media (max-width: 650px) {
+  header .checkenter .reg .button-decoration {
+    width: 90px;
+    height: 20px;
+    font-size: 0.6em;
+    background: white;
+    position: absolute;
+    z-index: 200;
+    margin: 0;
+  }
+}
+header .checkenter .reg .register {
+  width: 140px;
+  height: 40px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+  background-color: #30b5d8;
+  margin: 15px 10px;
+}
+@media (max-width: 650px) {
+  header .checkenter .reg .register {
+    width: 90px;
+    height: 20px;
+    font-size: 0.6em;
+    background: white;
+    position: absolute;
+    z-index: 200;
+    margin: 0;
+  }
+}
+@media (max-width: 650px) {
+  header .checkenter .reg .register {
+    left: 0;
+    top: 100px;
+  }
+}
+@media (max-width: 500px) {
+  header .checkenter .reg .register {
+    left: -25px;
+  }
+}
+header .checkenter .reg .log-in {
+  width: 75px;
+  height: 40px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 600;
+  margin: 15px 0;
   background-color: white;
-  width: 100%;
-  height: 70px;
-
+}
+@media (max-width: 650px) {
+  header .checkenter .reg .log-in {
+    width: 90px;
+    height: 20px;
+    font-size: 0.6em;
+    background: white;
+    position: absolute;
+    z-index: 200;
+    margin: 0;
+  }
+}
+@media (max-width: 650px) {
+  header .checkenter .reg .log-in {
+    left: 0;
+    top: 70px;
+  }
+}
+@media (max-width: 500px) {
+  header .checkenter .reg .log-in {
+    left: -25px;
+  }
+}
+/*
 
   .logo {
     background-color: @main-color;
@@ -191,15 +372,7 @@ header {
     }
   }
 
-  nav {
-    display: inline-block;
-    float: left;
-    position: relative;
-    @media (max-width: 1070px) {
-      z-index: 100;
-      #menucheck:checked + .list_routes {
-        display: block;
-      }
+
     }
     .menulist {
       display: none;
