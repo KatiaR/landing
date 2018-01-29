@@ -468,6 +468,55 @@ header {
     }
   }
 }
+
+.block_chapter {
+  .sorting {
+    .new-popular {
+      height: 5%;
+      border: none;
+      text-transform: capitalize;
+      font-size: 1.5em;
+      padding: 10px;
+      @media (max-width: 630px) {
+        font-size: 1em;
+      }
+
+    }
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    & span {
+      margin: 15px;
+      .new-popular;
+      @media (max-width: 630px) {
+        margin: 5px 0;
+      }
+    }
+
+    .new {
+      .new-popular;
+      margin: 20px;
+      background-color: white;
+      color: gray;
+      @media (max-width: 630px) {
+        margin: 10px 5px;
+      }
+    }
+    .popular {
+      .new-popular;
+      margin: 20px 80px 10px 0;
+      background-color: orange;
+      border-radius: 3px;
+      @media (max-width: 630px) {
+        margin: 10px 5px 5px 0;
+      }
+      @media (max-width: 360px) {
+        margin: 0 5px;
+      }
+    }
+  }
+}
+
 /*
 
 @media (max-width: 850px) {
