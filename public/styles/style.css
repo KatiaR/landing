@@ -118,7 +118,6 @@ body {
 }
 header {
   display: flex;
-  flex-wrap: wrap;
   background-color: white;
   justify-content: space-between;
 }
@@ -187,6 +186,13 @@ header .h-posotion .list_routes {
     background: #30b5d8;
   }
 }
+@media (max-width: 400px) {
+  header .h-posotion .list_routes {
+    font-size: 0.8em;
+    left: 120px;
+    padding: 0 8px;
+  }
+}
 header .h-posotion .list_routes a {
   text-decoration: none;
   color: gray;
@@ -197,6 +203,12 @@ header .h-posotion .list_routes a {
   header .h-posotion .list_routes a {
     padding: 5px 13px;
     margin-top: 0px;
+  }
+}
+@media (max-width: 500px) {
+  header .h-posotion .list_routes a {
+    font-size: 1em;
+    padding: 0;
   }
 }
 header .h-posotion .list_routes a:hover {
@@ -213,7 +225,7 @@ header .h-posotion .box-search {
   position: relative;
   background-color: lightgray;
 }
-@media (max-width: 500px) {
+@media (max-width: 350px) {
   header .h-posotion .box-search {
     width: 50px;
   }
@@ -224,7 +236,7 @@ header .h-posotion .box-search .icon {
   left: 25px;
   font-size: 20px;
 }
-@media (max-width: 500px) {
+@media (max-width: 350px) {
   header .h-posotion .box-search .icon {
     left: 15px;
   }
@@ -354,221 +366,15 @@ header .checkenter .reg .log-in {
     left: -25px;
   }
 }
-/*
-
-  .logo {
-    background-color: @main-color;
-    float: left;
-    padding: 10px 30px;
-    margin: 0 10px 0 100px;
-    height: 100%;
-    @media (max-width: 690px) {
-      padding: 10px 5px;
-      margin: 0 10px 0 5px;
-    }
-    @media (max-width: 470px) {
-      padding: 10px 0px;
-      margin: 0 10px 0 0px;
-    }
-  }
-
-
-    }
-    .menulist {
-      display: none;
-      @media (max-width: 1070px) {
-        cursor: pointer;
-        display: inline-block;
-        margin: 11px;
-        font-size: 2em;
-        font-weight: 600;
-      }
-      @media (max-width: 360px) {
-        font-size: 1.5em;
-        margin: 15px 0 0 5px;
-      }
-    }
-    #menucheck {
-      display: none;
-    }
-
-    .list_routes {
-      margin: 0;
-      padding: 0;
-      list-style-type: none;
-      @media (max-width: 1070px) {
-        display: none;
-        position: absolute;
-        background: #30b5d8;
-      }
-      & li {
-        float: left;
-
-        @media (max-width: 1070px) {
-          float: none;
-        }
-        & a {
-          text-decoration: none;
-          color: gray;
-          display: inline-block;
-          padding: 11px 13px;
-          margin-top: 10px;
-          font-size: 1.3em;
-          @media (max-width: 1070px) {
-            padding: 5px 13px;
-            margin-top: 0px;
-          }
-          @media (max-width: 640px) {
-            padding: 1px;
-             font-size: 1em;
-           }
-
-          &:hover {
-            color: @main-color;
-            @media (max-width: 1070px) {
-              color: white;
-            }
-          }
-        }
-      }
-    }
-  }
-  .box-search {
-    width: 75px;
-    height: 70px;
-    float: left;
-    left: 20px;
-    position: relative;
-    background-color: @gray-color;
-    @media (max-width: 1070px) {
-      margin: 0 auto;
-    }
-    @media (max-width: 470px) {
-      width: 55px;
-    }
-    &:hover {
-      cursor: pointer;
-      background-color: @main-color;
-    }
-    .icon {
-      position: absolute;
-      top: 15px;
-      left: 23px;
-      font-size: 30px;
-      @media (max-width: 470px) {
-        top: 20px;
-        left: 20px;
-        font-size: 20px;
-      }
-    }
-  }
-  .checkenter {
-    position: relative;
-    @media (max-width: 680px) {
-      #menucheck2:checked + .reg {
-        display: block;
-      }
-    }
-    .regform {
-      display: none;
-      margin: 10px;
-      @media (max-width: 680px) {
-        display: inline-block;
-        cursor: pointer;
-        position: relative;
-        top: 10px;
-        left: 40px;
-      }
-
-        @media (max-width: 360px) {
-          font-size: 1em;
-          top: 10px;
-          left: 20px;
-        }
-    }
-
-    #menucheck2 {
-      display: none;
-      }
-    .reg {
-      @media (max-width: 680px) {
-        display: none;
-      }
-    }
-    .register {
-      width: 140px;
-      height: 40px;
-      border: none;
-      background-color: @main-color;
-      text-transform: uppercase;
-      float: right;
-      font-size: 1em;
-      font-weight: 600;
-      margin: 15px 10px;
-      @media (max-width: 680px) {
-        width: 90px;
-        height: 20px;
-        font-size: 0.6em;
-        margin: 45px 85px;
-        background: white;
-        position: absolute;
-        z-index: 200;
-      }
-      @media (max-width: 470px) {
-        margin: 45px 10px;
-      }
-      @media (max-width: 360px) {
-        margin: 45px -25px;
-      }
-      &:hover {
-        cursor: pointer;
-        background-color: @gray-color;
-      }
-    }
-    .log-in {
-      width: 75px;
-      height: 40px;
-      border: none;
-      text-transform: uppercase;
-      float: right;
-      font-size: 1em;
-      font-weight: 600;
-      margin: 15px 0;
-      background-color: white;
-      @media (max-width: 680px) {
-        width: 90px;
-        height: 20px;
-        font-size: 0.6em;
-        margin: 20px 85px;
-        position: absolute;
-        z-index: 200;
-        background: white;
-      }
-      @media (max-width: 470px) {
-        margin: 20px 10px;
-      }
-      @media (max-width: 360px) {
-        margin: 20px -25px;
-      }
-      &:hover {
-        cursor: pointer;
-        background-color: @gray-color;
-      }
-    }
-  }
-}
-
 .container {
   position: relative;
   max-height: 588px;
 }
-
-.relation_ration {
+.container .relation_ration {
   padding-top: 43.7%;
   height: 0;
 }
-
-.slider {
+.container .slider {
   max-width: 1350px;
   position: absolute;
   top: 0px;
@@ -577,98 +383,186 @@ header .checkenter .reg .log-in {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  & > img {
-    position: absolute;
-    left: 0px;
-    max-width: 1345px;
-    margin: 1px;
-  }
-  & > input {
-    display: none;
-  }
-  & > input + label {
-    display: inline-block;
-    cursor: pointer;
-    z-index: 100;
-    position: absolute;
-  }
-
-  & > input:checked + label + div {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  & input[name='slide_switch'] ~ img {
-    opacity: 0;
-    margin: 0px;
-    padding: 0px;
-    width: 100%;
-  }
-
-  & input[name='slide_switch']:checked + label + img {
-    opacity: 1;
-  }
-
-  & label:nth-of-type(1) {
-    top: 60px;
-    right: 500px;
-
-  }
-
-  & label:nth-of-type(2) {
-    top: 60px;
-    right: 350px;
-
-  }
-
-  & label:nth-of-type(3) {
-    top: 60px;
-    right: 200px;
-
-  }
-
-  & label:nth-of-type(4) {
-    top: 160px;
-    right: 200px;
-
-  }
-
-  & label:nth-of-type(5) {
-    top: 258px;
-    right: 200px;
-
+}
+.container .slider > img {
+  position: absolute;
+  left: 0px;
+  max-width: 1345px;
+  margin: 1px;
+}
+.container .slider > input {
+  display: none;
+}
+.container .slider > input + label {
+  display: inline-block;
+  cursor: pointer;
+  z-index: 100;
+  position: absolute;
+}
+.container .slider > input:checked + label + div {
+  visibility: visible;
+  opacity: 1;
+}
+.container .slider input[name='slide_switch'] ~ img {
+  opacity: 0;
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+}
+.container .slider input[name='slide_switch']:checked + label + img {
+  opacity: 1;
+}
+@media (max-width: 1070px) {
+  .container .slider label {
+    height: 20%;
   }
 }
-
-.slide_deskription {
+@media (max-width: 650px) {
+  .container .slider label {
+    height: 28.6%;
+  }
+}
+@media (max-width: 1070px) {
+  .container .slider label img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+  }
+}
+@media (max-width: 650px) {
+  .container .slider label img {
+    left: 0;
+  }
+}
+.container .slider label:nth-of-type(1) {
+  top: 60px;
+  right: 500px;
+}
+@media (max-width: 1070px) {
+  .container .slider label:nth-of-type(1) {
+    top: 0;
+    right: 0;
+  }
+}
+@media (max-width: 650px) {
+  .container .slider label:nth-of-type(1) {
+    top: 71%;
+    left: 0;
+    position: absolute;
+  }
+}
+.container .slider label:nth-of-type(2) {
+  top: 60px;
+  right: 350px;
+}
+@media (max-width: 1070px) {
+  .container .slider label:nth-of-type(2) {
+    top: 20%;
+    right: 0;
+  }
+}
+@media (max-width: 650px) {
+  .container .slider label:nth-of-type(2) {
+    left: 20%;
+    top: 71%;
+    position: absolute;
+  }
+}
+.container .slider label:nth-of-type(3) {
+  top: 60px;
+  right: 200px;
+}
+@media (max-width: 1070px) {
+  .container .slider label:nth-of-type(3) {
+    top: 40%;
+    right: 0;
+  }
+}
+@media (max-width: 650px) {
+  .container .slider label:nth-of-type(3) {
+    left: 40%;
+    top: 71%;
+  }
+}
+.container .slider label:nth-of-type(4) {
+  top: 160px;
+  right: 200px;
+}
+@media (max-width: 1070px) {
+  .container .slider label:nth-of-type(4) {
+    top: 60%;
+    right: 0;
+  }
+}
+@media (max-width: 650px) {
+  .container .slider label:nth-of-type(4) {
+    left: 60%;
+    top: 71%;
+  }
+}
+.container .slider label:nth-of-type(5) {
+  top: 258px;
+  right: 200px;
+}
+@media (max-width: 1070px) {
+  .container .slider label:nth-of-type(5) {
+    top: 80%;
+    right: 0;
+  }
+}
+@media (max-width: 650px) {
+  .container .slider label:nth-of-type(5) {
+    left: 80%;
+    top: 71%;
+  }
+}
+.container .slide_deskription {
   position: absolute;
   width: 30%;
   height: auto;
-  background-color: @main-color;
+  background-color: #30b5d8;
   right: 360px;
   top: 160px;
-  @media (max-width: 1070px) {
+}
+@media (max-width: 1070px) {
+  .container .slide_deskription {
     display: none;
   }
 }
-
-.slide_deskription h3 {
+.container .slide_deskription h3 {
   padding: 0px 5px;
 }
-
-.slide_deskription p {
+.container .slide_deskription p {
   padding: 0px 5px;
   color: white;
   font-size: 0.95em;
 }
-
-img.decor {
+.container img.decor {
   position: absolute;
   width: 50%;
   top: 89%;
 }
+@media (max-width: 1070px) {
+  .container img.decor {
+    display: none;
+  }
+}
+/*
 
-.new {
+@media (max-width: 850px) {
+  .part1, .part2, .part5 {
+    width: 100%;
+  }
+
+  .part3, .part4, .part6, .part7 {
+    width: 50%;
+  }
+}
+
+
+ */
+/*.new {
   width: 15%;
   height: 5%;
   float: right;
@@ -1043,49 +937,6 @@ i.fa.fa-user-o {
 
 @media (max-width: 1070px) {
 
-  .slide_deskription {
-    display: none;
-  }
-
-  .slider label:nth-of-type(1) {
-    top: 0;
-    right: 0;
-  }
-
-  .slider label {
-    height: 20%;
-  }
-
-  .slider label img {
-    position: absolute;
-    top: 0;
-    right: 0;
-    height: 100%;
-  }
-
-  .slider label:nth-of-type(2) {
-    top: 20%;
-    right: 0;
-  }
-
-  .slider label:nth-of-type(3) {
-    top: 40%;
-    right: 0;
-  }
-
-  .slider label:nth-of-type(4) {
-    top: 60%;
-    right: 0;
-  }
-
-  .slider label:nth-of-type(5) {
-    top: 80%;
-    right: 0;
-  }
-
-  .decor {
-    display: none;
-  }
 
   .part1-description p,
   .part2-description p,
@@ -1161,7 +1012,6 @@ i.fa.fa-user-o {
 }
 
 @media (max-width: 640px) {
-
 
   .reg {
     display: none;
@@ -1463,7 +1313,7 @@ i.fa.fa-user-o {
             float: none;
             text-align: center;
           }
-                 }
+        }
         a {
           float: left;
           margin: 20px;
@@ -1479,7 +1329,7 @@ i.fa.fa-user-o {
 
             float: none;
           }
-                  }
+        }
         .radio-point {
           margin: 25px 0 0 -200px;
           padding: 5px;
@@ -1502,7 +1352,6 @@ i.fa.fa-user-o {
 
         }
         .slide-scroll1 {
-
 
           float: right;
           position: relative;
@@ -1777,7 +1626,6 @@ i.fa.fa-user-o {
         background-color: white;
       }
 
-
       @media (max-width: 1300px) {
         width: 45%;
       }
@@ -1987,6 +1835,4 @@ i.fa.fa-user-o {
       width: 45%;
     }
   }
-}
-
-*/
+}*/
