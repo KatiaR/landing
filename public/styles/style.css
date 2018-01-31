@@ -709,6 +709,7 @@ header .checkenter .reg .log-in {
 .block_chapter .slide2 {
   margin: 20px 60px 40px;
   font-size: 0;
+  overflow: hidden;
 }
 @media (max-width: 700px) {
   .block_chapter .slide2 {
@@ -1009,51 +1010,437 @@ header .checkenter .reg .log-in {
   background-color: #30b5d8;
   border: 2px solid lightgray;
 }
-/*
-
-.add-more {
-  float: left;
-  margin: 3% 0;
-  width: 97%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  button {
-    border-radius: 50px;
-    background-color: white;
-    border: 2px solid @main-color;
-    font-size: 20px;
-    text-transform: none;
-    padding: 10px 70px;
-    vertical-align: center;
-    &:hover {
-      background-color: @main-color;
-      border: 2px solid @gray-color
-    }
+.block-games {
+  margin-top: 20px;
+}
+.block-games .wrapper-games12 {
+  margin-left: 100px;
+  position: relative;
+  border-top: 1px solid transparent;
+  border-bottom: 0.1px solid transparent;
+}
+@media (max-width: 1170px) {
+  .block-games .wrapper-games12 {
+    margin: 0;
   }
 }
+.block-games .left-effect12 {
+  top: 18px;
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  transform: skewY(-20deg);
+  float: left;
+  margin-left: -100px;
+}
+.block-games .block-games1 .wrapper-games1 {
+  margin-left: 100px;
+  position: relative;
+  border-top: 1px solid transparent;
+  border-bottom: 0.1px solid transparent;
+  background-color: #399084;
+}
+@media (max-width: 1170px) {
+  .block-games .block-games1 .wrapper-games1 {
+    margin: 0;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .left-effect1 {
+  top: 18px;
+  position: absolute;
+  height: 100%;
+  width: 100px;
+  transform: skewY(-20deg);
+  float: left;
+  margin-left: -100px;
+  background-color: #2a8075;
+}
+@media (max-width: 1170px) {
+  .block-games .block-games1 .wrapper-games1 .left-effect1 {
+    display: none;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 {
+  display: flex;
+  margin: 20px 60px;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 1070px) {
+  .block-games .block-games1 .wrapper-games1 .chapter-games-block1 {
+    flex-direction: column;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 div {
+  display: flex;
+}
+@media (max-width: 530px) {
+  .block-games .block-games1 .wrapper-games1 .chapter-games-block1 div {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 div h2 {
+  font: normal 40px Open Sans Extra Bold, sans-serif;
+  font-weight: bolder;
+  color: white;
+  margin: 0;
+}
+@media (max-width: 360px) {
+  .block-games .block-games1 .wrapper-games1 .chapter-games-block1 div h2 {
+    width: 100%;
+    text-align: center;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 div a {
+  color: white;
+  margin: 10px 0 0 20px;
+  border-bottom: 1px dashed #fff;
+  text-decoration: none;
+  height: 20px;
+  padding-top: 5px;
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 div a:hover {
+  color: #30b5d8;
+  border-bottom: 1px dashed #30b5d8;
+}
+@media (max-width: 360px) {
+  .block-games .block-games1 .wrapper-games1 .chapter-games-block1 div a {
+    margin: 10px 0;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 .radio-point {
+  transform: scale(1.3);
+  margin-right: 210px;
+}
+@media (max-width: 530px) {
+  .block-games .block-games1 .wrapper-games1 .chapter-games-block1 .radio-point input {
+    margin: 0;
+  }
+}
+@media (max-width: 1070px) {
+  .block-games .block-games1 .wrapper-games1 .chapter-games-block1 .radio-point {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 .slide-scroll {
+  position: relative;
+}
+@media (max-width: 1070px) {
+  .block-games .block-games1 .wrapper-games1 .chapter-games-block1 .slide-scroll {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: -25px;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 .slide-scroll .scroll-left {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  background-color: black;
+  border-bottom: none;
+  margin-right: 5px;
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 .slide-scroll .scroll-left::before {
+  content: " ";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid transparent;
+  border-right: 20px solid white;
+  border-bottom: 20px solid transparent;
+  top: 7px;
+  left: 10px;
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 .slide-scroll .scroll-left::after {
+  content: " ";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid transparent;
+  border-right: 15px solid black;
+  border-bottom: 15px solid transparent;
+  top: 12px;
+  left: 15px;
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 .slide-scroll .scroll-right {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  background-color: black;
+  border-bottom: none;
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 .slide-scroll .scroll-right::before {
+  content: " ";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top: 20px solid transparent;
+  border-left: 20px solid white;
+  border-bottom: 20px solid transparent;
+  top: 7px;
+  right: 10px;
+}
+.block-games .block-games1 .wrapper-games1 .chapter-games-block1 .slide-scroll .scroll-right::after {
+  content: " ";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top: 15px solid transparent;
+  border-left: 15px solid black;
+  border-bottom: 15px solid transparent;
+  top: 12px;
+  right: 15px;
+}
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content {
+  margin: 40px 60px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 650px) {
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content {
+    margin: 20px 0;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 {
+  display: flex;
+  margin-top: 30px;
+}
+@media (max-width: 1070px) {
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 {
+    flex-direction: column;
+    margin-top: 0;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 {
+  display: flex;
+  position: relative;
+}
+@media (max-width: 530px) {
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 {
+    flex-direction: column;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 img,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 img,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 img,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 img,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 img,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 img,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 img,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 img {
+  margin: 10px;
+  border-bottom: 5px solid red;
+  max-height: 300px;
+}
+@media (max-width: 1070px) {
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 img {
+    max-height: none;
+  }
+}
+@media (max-width: 650px) {
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 img {
+    max-height: 300px;
+  }
+}
+@media (max-width: 530px) {
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 img,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 img {
+    width: 50%;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 .rating-games-c1,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 .rating-games-c1,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 .rating-games-c1,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 .rating-games-c1,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 .rating-games-c1,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 .rating-games-c1,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 .rating-games-c1,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 .rating-games-c1,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 .rating-games-c2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 .rating-games-c2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 .rating-games-c2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 .rating-games-c2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 .rating-games-c2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 .rating-games-c2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 .rating-games-c2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 .rating-games-c2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 .rating-games-c3,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 .rating-games-c3,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 .rating-games-c3,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 .rating-games-c3,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 .rating-games-c3,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 .rating-games-c3,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 .rating-games-c3,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 .rating-games-c3,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 .rating-games-c4,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 .rating-games-c4,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 .rating-games-c4,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 .rating-games-c4,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 .rating-games-c4,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 .rating-games-c4,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 .rating-games-c4,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 .rating-games-c4 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: #f0cb59;
+  top: -10px;
+  right: 5px;
+}
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 .rating-games-c1 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 .rating-games-c1 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 .rating-games-c1 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 .rating-games-c1 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 .rating-games-c1 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 .rating-games-c1 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 .rating-games-c1 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 .rating-games-c1 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 .rating-games-c2 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 .rating-games-c2 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 .rating-games-c2 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 .rating-games-c2 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 .rating-games-c2 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 .rating-games-c2 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 .rating-games-c2 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 .rating-games-c2 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 .rating-games-c3 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 .rating-games-c3 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 .rating-games-c3 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 .rating-games-c3 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 .rating-games-c3 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 .rating-games-c3 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 .rating-games-c3 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 .rating-games-c3 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 .rating-games-c4 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 .rating-games-c4 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 .rating-games-c4 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 .rating-games-c4 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 .rating-games-c4 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 .rating-games-c4 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 .rating-games-c4 > span,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 .rating-games-c4 > span {
+  font-size: x-large;
+  font-weight: 900;
+  line-height: 50px;
+  padding: 10px;
+}
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 div,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 div,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 div,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 div,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 div,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 div,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 div,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 div {
+  max-width: 300px;
+}
+@media (max-width: 1070px) {
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 div,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 div,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 div,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 div,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 div,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 div,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 div,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 div {
+    max-width: none;
+  }
+}
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 div h2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 div h2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 div h2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 div h2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 div h2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 div h2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 div h2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 div h2,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 div p,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 div p,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 div p,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 div p,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 div p,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 div p,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 div p,
+.block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 div p {
+  display: flex;
+  flex-direction: column;
+  padding-right: 50px;
+  padding-left: 10px;
+}
+@media (max-width: 530px) {
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 div h2,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 div h2,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 div h2,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 div h2,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 div h2,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 div h2,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 div h2,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 div h2,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col1 div p,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col1 div p,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col2 div p,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col2 div p,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col3 div p,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col3 div p,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col12 .content-col4 div p,
+  .block-games .block-games1 .wrapper-games1 .wrapper-g-content .row-col34 .content-col4 div p {
+    font-size: 0.9em;
+  }
+}
+/*
 
 .block-games1 {
 
   .wrapper-games1 {
-    background-color: #399084;
-    margin-left: 100px;
-    position: relative;
-    border-top: 1px solid transparent;
-    border-bottom: 0.1px solid transparent;
+
     @media (max-width: 1124px) {
       width: 100%;
       margin-left: 0;
     }
     .left-effect1 {
-      background-color: #2a8075;
-      top: 18px;
-      position: absolute;
-      height: 100%;
-      width: 100px;
-      transform: skewY(-20deg);
-      float: left;
-      margin-left: -100px;
+
       @media (max-width: 1124px) {
         display: none;
       }
@@ -1062,33 +1449,6 @@ header .checkenter .reg .log-in {
       margin: 20px 60px;
       text-align: center;
 
-      h2 {
-        float: left;
-        margin: 10px;
-        font: normal 40px Open Sans Extra Bold, sans-serif;
-        font-weight: bolder;
-        color: white;
-        @media (max-width: 1060px) {
-          float: none;
-          text-align: center;
-        }
-      }
-      a {
-        float: left;
-        margin: 20px;
-        color: white;
-        padding-top: 5px;
-        border-bottom: 1px dashed #fff;
-        text-decoration: none;
-        &:hover {
-          color: @main-color;
-          border-bottom: 1px dashed @main-color;
-        }
-        @media (max-width: 1060px) {
-
-          float: none;
-        }
-      }
       .radio-point {
         margin: 20px 0 0 -200px;
         padding: 5px;
@@ -1109,76 +1469,7 @@ header .checkenter .reg .log-in {
           }
         }
       }
-      .slide-scroll {
-        float: right;
-        position: relative;
-        margin-top: 10px;
-        @media (max-width: 1060px) {
-          float: none;
-          margin: 0;
-          top: -65px;
 
-        }
-        .arrow() {
-          content: " ";
-          position: absolute;
-          width: 0px;
-          height: 0px;
-        }
-        .scroll-params () {
-          width: 50px;
-          height: 50px;
-          margin: 0;
-          background-color: black;
-          border-bottom: none;
-        }
-
-        .scroll-left {
-          .scroll-params;
-          float: left;
-          margin-right: 5px;
-
-          &::before {
-            .arrow;
-            border-top: 20px solid transparent;
-            border-right: 20px solid white;
-            border-bottom: 20px solid transparent;
-            top: 7px;
-            left: 10px;
-          }
-          &::after {
-            .arrow;
-            border-top: 15px solid transparent;
-            border-right: 15px solid black;
-            border-bottom: 15px solid transparent;
-            top: 12px;
-            left: 15px;
-          }
-        }
-        .scroll-right {
-          float: right;
-          .scroll-params;
-
-          &::before {
-            .arrow;
-            border-top: 20px solid transparent;
-            border-left: 20px solid white;
-            border-bottom: 20px solid transparent;
-            top: 7px;
-            right: 10px;
-          }
-          &::after {
-            .arrow;
-            border-top: 15px solid transparent;
-            border-left: 15px solid black;
-            border-bottom: 15px solid transparent;
-            top: 12px;
-            right: 15px;
-          }
-        }
-      }
-    }
-  }
   .wrapper-g-content {
     margin: 40px 60px;
     background-color: white;
@@ -1269,6 +1560,7 @@ header .checkenter .reg .log-in {
       width: 100%;
       margin-left: 0;
     }
+
     .left-effect2 {
       background-color: #dfdccb;
       top: 18px;
@@ -1281,6 +1573,7 @@ header .checkenter .reg .log-in {
       @media (max-width: 1124px) {
         display: none;
       }
+
     }
     .chapter-games2 {
       margin: 20px 60px;
