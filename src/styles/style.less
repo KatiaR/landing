@@ -622,7 +622,7 @@ header {
     .part12 {
       display: flex;
       @media (max-width: 700px) {
-        display: block;
+        flex-direction: column;
       }
       .part1 {
         position: relative;
@@ -656,12 +656,22 @@ header {
 
       }
     }
-    .part345 {
+    .part34567 {
       display: flex;
+      .part34 {
+        display: flex;
+      }
       @media (max-width: 700px) {
         flex-wrap: wrap;
         width: 100%;
       }
+      .part567 {
+        @media (max-width: 700px) {
+
+          width: 100%;
+        }
+      }
+
     }
     .part67 {
       display: flex;
@@ -892,6 +902,204 @@ header {
     float: left;
     margin-left: -100px;
   }
+  .chapter-games-block {
+    display: flex;
+    margin: 20px 60px;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1070px) {
+      flex-direction: column;
+    }
+    & div {
+      display: flex;
+      @media (max-width: 530px) {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      & h2 {
+        font: normal 40px Open Sans Extra Bold, sans-serif;
+        font-weight: bolder;
+        margin: 0;
+        @media (max-width: 360px) {
+          width: 100%;
+          text-align: center;
+
+        }
+      }
+      & a {
+        margin: 10px 0 0 20px;
+        border-bottom: 1px dashed #fff;
+        text-decoration: none;
+        height: 20px;
+        padding-top: 5px;
+        &:hover {
+          color: @main-color;
+          border-bottom: 1px dashed @main-color;
+        }
+        @media (max-width: 360px) {
+          margin: 10px 0;
+
+        }
+      }
+    }
+    .radio-point {
+      transform: scale(1.3);
+      margin-right: 210px;
+      & input {
+        @media (max-width: 530px) {
+          margin: 0;
+        }
+      }
+      @media (max-width: 1070px) {
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+      }
+
+    }
+    .slide-scroll {
+
+      position: relative;
+      @media (max-width: 1070px) {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-top: -25px;
+      }
+
+      .arrow() {
+        content: " ";
+        position: absolute;
+        width: 0px;
+        height: 0px;
+      }
+
+      .scroll-params () {
+
+        width: 50px;
+        height: 50px;
+        margin: 0;
+        background-color: black;
+        border-bottom: none;
+        margin-right: 5px;
+      }
+
+      .scroll-left {
+
+        .scroll-params;
+
+        &::before {
+          .arrow;
+          border-top: 20px solid transparent;
+          border-right: 20px solid white;
+          border-bottom: 20px solid transparent;
+          top: 7px;
+          left: 10px;
+        }
+        &::after {
+          .arrow;
+          border-top: 15px solid transparent;
+          border-right: 15px solid black;
+          border-bottom: 15px solid transparent;
+          top: 12px;
+          left: 15px;
+        }
+      }
+      .scroll-right {
+
+        .scroll-params;
+
+        &::before {
+          .arrow;
+          border-top: 20px solid transparent;
+          border-left: 20px solid white;
+          border-bottom: 20px solid transparent;
+          top: 7px;
+          right: 15px;
+        }
+        &::after {
+          .arrow;
+          border-top: 15px solid transparent;
+          border-left: 15px solid black;
+          border-bottom: 15px solid transparent;
+          top: 12px;
+          right: 20px;
+
+        }
+      }
+
+    }
+  }
+  .wrapper-g-content {
+    margin: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 650px) {
+      margin: 20px;
+    }
+
+    .row-col12, .row-col34, .row-col56 {
+      display: flex;
+      margin-top: 30px;
+
+      .content-col1, .content-col2,
+      .content-col3, .content-col4,
+      .content-col5, .content-col6 {
+        display: flex;
+        position: relative;
+
+        & img {
+          margin: 10px;
+          border-bottom: 5px solid red;
+          max-height: 300px;
+          @media (max-width: 1070px) {
+            max-height: none;
+
+          }
+          @media (max-width: 650px) {
+            max-height: 300px;
+
+          }
+          @media (max-width: 530px) {
+            width: 50%;
+          }
+        }
+        .rating-games-c1, .rating-games-c2,
+        .rating-games-c3, .rating-games-c4 {
+          position: absolute;
+          width: 50px;
+          height: 50px;
+          background-color: @main-yellow;
+          top: -10px;
+          right: 5px;
+          & > span {
+            font-size: x-large;
+            font-weight: 900;
+            line-height: 50px;
+            padding: 10px;
+          }
+        }
+        & div {
+          max-width: 300px;
+          @media (max-width: 1070px) {
+            max-width: none;
+          }
+          & h2, p {
+            display: flex;
+            flex-direction: column;
+            padding-right: 50px;
+            padding-left: 10px;
+            @media (max-width: 530px) {
+              font-size: 0.9em;
+            }
+
+          }
+        }
+      }
+    }
+  }
+
   .block-games1 {
     .wrapper-games1 {
       .wrapper-games12;
@@ -904,132 +1112,14 @@ header {
         }
       }
       .chapter-games-block1 {
-        display: flex;
-        margin: 20px 60px;
-        align-items: center;
-        justify-content: space-between;
-        @media (max-width: 1070px) {
-          flex-direction: column;
-        }
-
+        .chapter-games-block;
         & div {
-          display: flex;
-          @media (max-width: 530px) {
-            flex-wrap: wrap;
-            justify-content: center;
-          }
-          & h2 {
-            font: normal 40px Open Sans Extra Bold, sans-serif;
-            font-weight: bolder;
-            color: white;
-            margin: 0;
-            @media (max-width: 360px) {
-             width: 100%;
-              text-align: center;
 
-            }
+          & h2 {
+            color: white;
           }
           & a {
             color: white;
-            margin: 10px 0 0 20px;
-            border-bottom: 1px dashed #fff;
-            text-decoration: none;
-            height: 20px;
-            padding-top: 5px;
-            &:hover {
-              color: @main-color;
-              border-bottom: 1px dashed @main-color;
-            }
-            @media (max-width: 360px) {
-              margin: 10px 0;
-
-            }
-          }
-        }
-
-        .radio-point {
-          transform: scale(1.3);
-          margin-right: 210px;
-          & input {
-            @media (max-width: 530px) {
-              margin: 0;
-            }
-          }
-          @media (max-width: 1070px) {
-            margin-right: 0;
-            display: flex;
-            justify-content: center;
-            margin-top: 20px;
-          }
-
-        }
-        .slide-scroll {
-
-          position: relative;
-          @media (max-width: 1070px) {
-            display: flex;
-            justify-content: space-between;
-            width: 100%;
-            margin-top: -25px;
-          }
-
-          .arrow() {
-            content: " ";
-            position: absolute;
-            width: 0px;
-            height: 0px;
-          }
-          .scroll-params () {
-            width: 50px;
-            height: 50px;
-            margin: 0;
-            background-color: black;
-            border-bottom: none;
-          }
-
-          .scroll-left {
-            .scroll-params;
-
-            margin-right: 5px;
-
-            &::before {
-              .arrow;
-              border-top: 20px solid transparent;
-              border-right: 20px solid white;
-              border-bottom: 20px solid transparent;
-              top: 7px;
-              left: 10px;
-            }
-            &::after {
-              .arrow;
-              border-top: 15px solid transparent;
-              border-right: 15px solid black;
-              border-bottom: 15px solid transparent;
-              top: 12px;
-              left: 15px;
-            }
-          }
-          .scroll-right {
-
-            .scroll-params;
-
-            &::before {
-              .arrow;
-              border-top: 20px solid transparent;
-              border-left: 20px solid white;
-              border-bottom: 20px solid transparent;
-              top: 7px;
-              right: 10px;
-            }
-            &::after {
-              .arrow;
-              border-top: 15px solid transparent;
-              border-left: 15px solid black;
-              border-bottom: 15px solid transparent;
-              top: 12px;
-              right: 15px;
-
-            }
           }
         }
       }
@@ -1109,281 +1199,125 @@ header {
       }
     }
   }
+
+  .block-games2 {
+    .wrapper-games2 {
+      .wrapper-games12;
+      background-color: #eae7d6;
+      .left-effect2 {
+        .left-effect12;
+        background-color: #dfdccb;
+        @media (max-width: 1170px) {
+          display: none;
+        }
+      }
+      .chapter-games-block2 {
+        .chapter-games-block;
+        & div {
+          & h2 {
+            color: black;
+          }
+          & a {
+            color: darkblue;
+            border-bottom: 1px dashed darkblue;
+            &:hover {
+              color: @hover-color;
+              border-bottom: 1px dashed @hover-color;
+            }
+          }
+        }
+      }
+      .wrapper-g-content {
+        .row-col12, .row-col34, .row-col56 {
+          @media (max-width: 1070px) {
+            justify-content: space-around;
+          }
+          @media (max-width: 780px) {
+            flex-direction: column;
+            margin-top: 0;
+
+          }
+          @media (max-width: 540px) {
+            align-items: center;
+          }
+
+          .content-col1, .content-col2,
+          .content-col3, .content-col4,
+          .content-col5, .content-col6 {
+            margin-right: 30px;
+
+            @media (max-width: 1070px) {
+              flex-direction: column;
+            }
+            @media (max-width: 780px) {
+              flex-direction: row;
+              margin: 10px 0;
+
+            }
+            @media (max-width: 540px) {
+              flex-direction: column;
+
+            }
+            & img {
+              max-height: 150px;
+              margin: 0;
+              @media (max-width: 1070px) {
+                max-height: none;
+                max-width: 300px;
+              }
+              @media (max-width: 780px) {
+                max-height: 150px;
+              }
+              @media (max-width: 540px) {
+                width: 100%;
+              }
+            }
+            & div {
+              background-color: white;
+              max-height: 155px;
+              font-size: 15px;
+              max-width: 300px;
+              & h2, p {
+                padding-right: 5px;
+                margin: 10px 0;
+              }
+            }
+            .play-botton {
+              position: absolute;
+              top: 0;
+              width: 70px;
+              height: 70px;
+              background-color: red;
+              .icon-play3:before {
+                content: "\ea1c";
+                color: white;
+                font-size: 50px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+              }
+
+            }
+            &:hover {
+              cursor: pointer;
+
+            }
+          }
+
+        }
+
+      }
+    }
+  }
 }
 
 /*
 
-.block-games1 {
-
-  .wrapper-games1 {
-
-    @media (max-width: 1124px) {
-      width: 100%;
-      margin-left: 0;
-    }
-    .left-effect1 {
-
-      @media (max-width: 1124px) {
-        display: none;
-      }
-    }
-    .chapter-games-block1 {
-      margin: 20px 60px;
-      text-align: center;
-
-      .radio-point {
-        margin: 20px 0 0 -200px;
-        padding: 5px;
-        display: inline-block;
-        @media (max-width: 1060px) {
-          width: 75%;
-          margin: 20px 10%;
-        }
-        input {
-          float: left;
-          transform: scale(1.3);
-          margin-left: 15px;
-          @media (max-width: 1060px) {
-            float: none;
-          }
-          @media (max-width: 640px) {
-            margin: 0;
-          }
-        }
-      }
-
-  .wrapper-g-content {
-    margin: 40px 60px;
-    background-color: white;
-    .size-block () {
-      width: 50%;
-    }
-    .size-block2 () {
-      width: 100%;
-    }
-    .img-block () {
-      float: left;
-      margin: 10px;
-      width: 50%;
-      border-bottom: 5px solid red;
-    }
-    .img-block2 () {
-      width: 30%;
-      border-bottom: 3px solid red;
-    }
-    .rating-games-c1, .rating-games-c2,
-    .rating-games-c3, .rating-games-c4 {
-      position: absolute;
-      width: 50px;
-      height: 50px;
-      background-color: @main-yellow;
-      top: -10px;
-      right: 5px;
-      & > span {
-        font-size: x-large;
-        font-weight: 900;
-        line-height: 50px;
-        padding: 10px;
-      }
-    }
-    .content-col1, .content-col2 {
-      float: left;
-      position: relative;
-      .size-block;
-      & > img {
-        .img-block;
-      }
-      @media (max-width: 930px) {
-        .size-block2;
-        & > img {
-          .img-block2;
-        }
-      }
-    }
-    .content-col3, .content-col4 {
-      float: left;
-      position: relative;
-      .size-block;
-      & > img {
-        .img-block;
-      }
-      @media (max-width: 930px) {
-        .size-block2;
-        & > img {
-          .img-block2;
-        }
-      }
-
-    }
-    h2, p {
-      padding-right: 50px;
-      padding-left: 10px;
-      @media (max-width: 1230px) {
-        font-size: 1em;
-      }
-      @media (max-width: 500px) {
-        font-size: 0.8em;
-      }
-    }
-
-  }
-}
 
 .block-games2 {
 
-  .wrapper-games2 {
-    background-color: #eae7d6;
-    margin-left: 100px;
-    position: relative;
-    border-top: 0.1px solid transparent;
-    border-bottom: 0.1px solid transparent;
 
-    @media (max-width: 1124px) {
-      width: 100%;
-      margin-left: 0;
-    }
 
-    .left-effect2 {
-      background-color: #dfdccb;
-      top: 18px;
-      position: absolute;
-      height: 100%;
-      width: 100px;
-      transform: skewY(-20deg);
-      float: left;
-      margin-left: -100px;
-      @media (max-width: 1124px) {
-        display: none;
-      }
-
-    }
-    .chapter-games2 {
-      margin: 20px 60px;
-      text-align: center;
-      .chapter-games-block2 {
-        h2 {
-          float: left;
-          margin: 10px;
-          font: normal 40px Open Sans Extra Bold, sans-serif;
-          font-weight: bolder;
-          color: black;
-          @media (max-width: 1060px) {
-            float: none;
-            text-align: center;
-          }
-        }
-        a {
-          float: left;
-          margin: 20px;
-          color: @main-color;
-          padding-top: 5px;
-          border-bottom: 1px dashed @main-color;
-          text-decoration: none;
-          &:hover {
-            color: @hover-color;
-            border-bottom: 1px dashed @hover-color;
-          }
-          @media (max-width: 1060px) {
-
-            float: none;
-          }
-        }
-        .radio-point {
-          margin: 25px 0 0 -200px;
-          padding: 5px;
-          display: inline-block;
-          @media (max-width: 1060px) {
-            width: 75%;
-            margin: 20px 10%;
-          }
-          input {
-            float: left;
-            transform: scale(1.3);
-            margin-left: 15px;
-            @media (max-width: 1060px) {
-              float: none;
-            }
-            @media (max-width: 640px) {
-              margin: 0;
-            }
-          }
-
-        }
-        .slide-scroll1 {
-
-          float: right;
-          position: relative;
-          margin-top: 10px;
-
-          @media (max-width: 1060px) {
-            float: none;
-            margin: 0;
-            top: -65px;
-
-          }
-
-          .arrow1() {
-            content: " ";
-            position: absolute;
-            width: 0px;
-            height: 0px;
-          }
-          .scroll-params1 () {
-            width: 50px;
-            height: 50px;
-            margin: 0;
-            background-color: black;
-            border-bottom: none;
-          }
-
-          .scroll-left1 {
-            .scroll-params1;
-            float: left;
-            margin-right: 5px;
-            padding-bottom: 3px;
-
-            &::before {
-              .arrow1;
-              border-top: 20px solid transparent;
-              border-right: 20px solid white;
-              border-bottom: 20px solid transparent;
-              top: 7px;
-              left: 10px;
-            }
-            &::after {
-              .arrow1;
-              border-top: 15px solid transparent;
-              border-right: 15px solid black;
-              border-bottom: 15px solid transparent;
-              top: 12px;
-              left: 15px;
-            }
-          }
-          .scroll-right1 {
-            float: right;
-            padding-bottom: 3px;
-            .scroll-params1;
-
-            &::before {
-              .arrow1;
-              border-top: 20px solid transparent;
-              border-left: 20px solid white;
-              border-bottom: 20px solid transparent;
-              top: 7px;
-              right: 10px;
-            }
-            &::after {
-              .arrow1;
-              border-top: 15px solid transparent;
-              border-left: 15px solid black;
-              border-bottom: 15px solid transparent;
-              top: 12px;
-              right: 15px;
-            }
-          }
-        }
-      }
-    }
     .wrapper-g-content2 {
       margin: 20px 60px;
 
@@ -1406,32 +1340,15 @@ header {
         width: 50%;
         border-bottom: 5px solid red;
       }
-      & p {
-        padding: 0 5px 0 10px;
-        font-family: Open Sans;
-      }
-      & h2 {
-        font-family: Open Sans;
-        margin: 0;
-        padding-left: 10px;
-      }
+
       .play-botton {
-        width: 70px;
-        height: 70px;
-        background-color: red;
-        top: 0;
-        position: absolute;
+
         @media (max-width: 1060px) {
           width: 40px;
           height: 40px;
         }
         .icon-play3:before {
-          content: "\ea1c";
-          color: white;
-          font-size: 50px;
-          position: absolute;
-          top: 10px;
-          left: 10px;
+
           @media (max-width: 1060px) {
             top: 6px;
             left: 6px;
@@ -1440,10 +1357,7 @@ header {
         }
       }
 
-      .col21, .col22, .col23, .col24, .col25, .col26 {
-        .col2;
-        margin: 15px;
-      }
+
 
     }
 
