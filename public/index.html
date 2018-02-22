@@ -3,45 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <title>AM4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <link href="styles/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="styles/style-icons.css" rel="stylesheet" type="text/css">
     <link href="styles/variables.css" rel="stylesheet" type="text/css">
     <link href="slider.css" rel="stylesheet" type="text/css">
     <link href="styles/style.css" rel="stylesheet">
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-<body>
-<header>
-    <div class="h-posotion">
-        <img class="logo" src="images/logo.png" alt="logo">
+<body class="container-fluid">
+<header class="row">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-        <nav>
-            <label class="menulist" for="menucheck"><span class="icon-menu"></span></label>
-            <input id="menucheck" type="checkbox">
-            <ul class="list_routes">
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Статьи</a></li>
-                <li><a href="#">Видео</a></li>
-                <li><a href="#">Игры</a></li>
-                <li><a href="#">Ещё</a></li>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item"><a class="nav-link active" href="#">Новости</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Статьи</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Видео</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Игры</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Ещё</a></li>
             </ul>
-        </nav>
-        <div class="box-search">
-            <span class="icon"><i class="fa fa-search"></i></span>
+            <form class="form-inline my-2 my-lg-0 box-search">
+
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" >
+
+            </form>
         </div>
-    </div>
+    </nav>
+
+      <!-- <img class="logo" src="images/logo.png" alt="logo">
+                    <ul class="nav">
+                    <li class="nav-item"><a class="nav-link active" href="#">Новости</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Статьи</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Видео</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Игры</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#">Ещё</a></li>
+                </ul> -->
+
+
+
+     <!--   <nav class="navbar navbar-default" role="navigation">
+            <label class="menulist" for="menucheck"><span class="icon-menu"></span></label>
+            <input id="menucheck" type="checkbox"> -->
+
+        <!-- <div class="box-search">
+            <span class="icon"><i class="fa fa-search"></i></span> -->
+
+
     <div class="checkenter">
         <label class="regform" for="menucheck2"><span class="icon-user fa-2x"></span></label>
         <input id="menucheck2" type="checkbox">
-        <div class="reg">
+
             <button class="register">Регистрация</button>
             <button class="log-in">Вход</button>
-        </div>
+
 
     </div>
 
 </header>
-<div class="container">
+<div class="container-old container-fluid">
     <div class="relation_ration"></div>
     <div class="slider">
         <input type="radio" name="slide_switch" id="id1"/>
