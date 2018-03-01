@@ -1,3 +1,9 @@
+.container,
+.row,
+body {
+  margin: 0;
+  padding: 0;
+}
 button:hover {
   cursor: pointer;
 }
@@ -105,101 +111,206 @@ body {
 .icon-play3:before {
   content: "\ea1c";
 }
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
 body {
   margin: 0;
   padding: 0;
 }
-header {
-  display: flex;
-  background-color: white;
-  justify-content: space-between;
+body header {
+  margin: 0;
+  padding: 0;
 }
-header .h-posotion {
-  display: flex;
-  align-items: center;
+body header a.navbar-brand {
+  padding: 0;
 }
-header .h-posotion .logo {
+body header a.navbar-brand .logo {
+  margin-left: 100px;
   background-color: #30b5d8;
   padding: 10px 30px;
-  margin: 0 10px 0 70px;
 }
-header .h-posotion nav .menulist {
-  display: none;
+@media (max-width: 400px) {
+  body header a.navbar-brand .logo {
+    margin-left: 0;
+  }
 }
-header .h-posotion nav #menucheck {
-  display: none;
+body header nav.nav-position {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
-header .h-posotion .list_routes {
-  display: flex;
-  flex-wrap: wrap;
-  font-size: 1em;
-  cursor: pointer;
-  list-style-type: none;
-  padding: 0 15px;
+body header nav.nav-position .navbar-toggler {
+  margin: 0 20px;
 }
-header .h-posotion .list_routes a {
-  text-decoration: none;
-  color: gray;
-  padding: 0 13px;
-  font-size: 1.3em;
+body header .navbar-nav {
+  align-items: center;
+  width: 100%;
 }
-header .h-posotion .list_routes a:hover {
-  color: #30b5d8;
-}
-header .h-posotion .box-search {
-  width: 75px;
+body header .navbar-nav .nav-item {
+  margin: 0;
+  padding: 0;
   height: 70px;
-  position: relative;
+  line-height: 70px;
+  font-size: 19px;
+}
+body header .navbar-nav .nav-item:hover {
   background-color: lightgray;
 }
-header .h-posotion .box-search .icon {
-  position: absolute;
-  top: 15px;
-  left: 25px;
+body header .navbar-nav .nav-item a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 1.3em;
+}
+body header .navbar-nav .nav-item .box-search {
+  width: 75px;
+  height: 70px;
+  background-color: lightgray;
+  text-align: center;
+}
+body header .navbar-nav .nav-item .box-search .icon {
   font-size: 20px;
 }
-header .checkenter {
-  display: flex;
-  align-items: center;
-  position: relative;
-}
-header .checkenter .regform {
-  display: none;
-  padding: 20px;
-}
-header .checkenter #menucheck2 {
-  display: none;
-}
-header .checkenter .reg {
-  display: flex;
-}
-header .checkenter .reg .button-decoration {
+body header .button-decoration {
   height: 40px;
   border: none;
   text-transform: uppercase;
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 800;
+  border-radius: 0;
 }
-header .checkenter .reg .register {
+body header .log-in {
+  color: black;
+  width: 75px;
+  height: 40px;
+  border: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-weight: 800;
+  border-radius: 0;
+  margin: 15px 5px;
+  background-color: white;
+}
+body header .register {
   width: 140px;
   height: 40px;
   border: none;
   text-transform: uppercase;
   font-size: 1em;
-  font-weight: 600;
+  font-weight: 800;
+  border-radius: 0;
   background-color: #30b5d8;
-  margin: 15px 10px;
+  margin: 15px 20px 15px 10px;
 }
-header .checkenter .reg .log-in {
-  width: 75px;
-  height: 40px;
-  border: none;
-  text-transform: uppercase;
-  font-size: 1em;
-  font-weight: 600;
-  margin: 15px 0;
+/* header {
+  display: flex;
+
   background-color: white;
-}
+  justify-content: space-between;
+
+  .h-posotion {
+    display: flex;
+    align-items: center;
+    .logo {
+      background-color: @main-color;
+      padding: 10px 30px;
+      margin: 0 10px 0 70px;
+
+    }
+
+    nav {
+
+      .menulist {
+        display: none;
+
+      }
+      #menucheck {
+        display: none;
+      }
+    }
+    .list_routes {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 1em;
+      cursor: pointer;
+      list-style-type: none;
+      padding: 0 15px;
+
+
+      & a {
+        text-decoration: none;
+        color: gray;
+        padding: 0 13px;
+        font-size: 1.3em;
+
+                &:hover {
+          color: @main-color;
+
+        }
+      }
+
+    }
+  .box-search {
+      width: 75px;
+      height: 70px;
+      position: relative;
+      background-color: @gray-color;
+
+      .icon {
+        position: absolute;
+        top: 15px;
+        left: 25px;
+        font-size: 20px;
+
+      }
+    }
+  }
+  .checkenter {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    & span {
+
+    }
+    .regform {
+      display: none;
+      padding: 20px;
+
+    }
+    #menucheck2 {
+      display: none;
+
+    }
+    .reg {
+      display: flex;
+
+      .button-decoration {
+        height: 40px;
+        border: none;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 600;
+
+      }
+      .register {
+        width: 140px;
+        .button-decoration;
+        background-color: @main-color;
+        margin: 15px 10px;
+
+      }
+      .log-in {
+        width: 75px;
+        .button-decoration;
+        margin: 15px 0;
+        background-color: white;
+
+      }
+    }
+  }
+} */
 .add-more {
   display: flex;
   align-items: center;
@@ -229,18 +340,16 @@ header .checkenter .reg .log-in {
 .container-old .slider {
   max-width: 1350px;
   position: absolute;
-  top: 0px;
-  left: 0px;
-  margin: 0px;
+  top: 0;
+  left: 0;
+  margin: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
 }
 .container-old .slider > img {
   position: absolute;
-  left: 0px;
-  max-width: 1345px;
-  margin: 1px;
+  left: 0;
 }
 .container-old .slider > input {
   display: none;
@@ -257,8 +366,8 @@ header .checkenter .reg .log-in {
 }
 .container-old .slider input[name='slide_switch'] ~ img {
   opacity: 0;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   width: 100%;
 }
 .container-old .slider input[name='slide_switch']:checked + label + img {
@@ -986,8 +1095,8 @@ header .checkenter .reg .log-in {
 .block-games .chapter-games-block .slide-scroll .scroll-left::before {
   content: " ";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 20px solid transparent;
   border-right: 20px solid white;
   border-bottom: 20px solid transparent;
@@ -997,8 +1106,8 @@ header .checkenter .reg .log-in {
 .block-games .chapter-games-block .slide-scroll .scroll-left::after {
   content: " ";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 15px solid transparent;
   border-right: 15px solid black;
   border-bottom: 15px solid transparent;
@@ -1016,8 +1125,8 @@ header .checkenter .reg .log-in {
 .block-games .chapter-games-block .slide-scroll .scroll-right::before {
   content: " ";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 20px solid transparent;
   border-left: 20px solid white;
   border-bottom: 20px solid transparent;
@@ -1027,8 +1136,8 @@ header .checkenter .reg .log-in {
 .block-games .chapter-games-block .slide-scroll .scroll-right::after {
   content: " ";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 15px solid transparent;
   border-left: 15px solid black;
   border-bottom: 15px solid transparent;
@@ -1552,8 +1661,8 @@ header .checkenter .reg .log-in {
 .block-games .block-games1 .wrapper-games1 .chapter-games-block1 .slide-scroll .scroll-left::before {
   content: " ";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 20px solid transparent;
   border-right: 20px solid white;
   border-bottom: 20px solid transparent;
@@ -1563,8 +1672,8 @@ header .checkenter .reg .log-in {
 .block-games .block-games1 .wrapper-games1 .chapter-games-block1 .slide-scroll .scroll-left::after {
   content: " ";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 15px solid transparent;
   border-right: 15px solid black;
   border-bottom: 15px solid transparent;
@@ -1582,8 +1691,8 @@ header .checkenter .reg .log-in {
 .block-games .block-games1 .wrapper-games1 .chapter-games-block1 .slide-scroll .scroll-right::before {
   content: " ";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 20px solid transparent;
   border-left: 20px solid white;
   border-bottom: 20px solid transparent;
@@ -1593,8 +1702,8 @@ header .checkenter .reg .log-in {
 .block-games .block-games1 .wrapper-games1 .chapter-games-block1 .slide-scroll .scroll-right::after {
   content: " ";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 15px solid transparent;
   border-left: 15px solid black;
   border-bottom: 15px solid transparent;
@@ -1953,8 +2062,8 @@ header .checkenter .reg .log-in {
 .block-games .block-games2 .wrapper-games2 .chapter-games-block2 .slide-scroll .scroll-left::before {
   content: " ";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 20px solid transparent;
   border-right: 20px solid white;
   border-bottom: 20px solid transparent;
@@ -1964,8 +2073,8 @@ header .checkenter .reg .log-in {
 .block-games .block-games2 .wrapper-games2 .chapter-games-block2 .slide-scroll .scroll-left::after {
   content: " ";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 15px solid transparent;
   border-right: 15px solid black;
   border-bottom: 15px solid transparent;
@@ -1983,8 +2092,8 @@ header .checkenter .reg .log-in {
 .block-games .block-games2 .wrapper-games2 .chapter-games-block2 .slide-scroll .scroll-right::before {
   content: " ";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 20px solid transparent;
   border-left: 20px solid white;
   border-bottom: 20px solid transparent;
@@ -1994,8 +2103,8 @@ header .checkenter .reg .log-in {
 .block-games .block-games2 .wrapper-games2 .chapter-games-block2 .slide-scroll .scroll-right::after {
   content: " ";
   position: absolute;
-  width: 0px;
-  height: 0px;
+  width: 0;
+  height: 0;
   border-top: 15px solid transparent;
   border-left: 15px solid black;
   border-bottom: 15px solid transparent;

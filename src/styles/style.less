@@ -3,6 +3,11 @@
 @gray-color: lightgray;
 @hover-color: blue;
 
+.container, .row, body {
+  margin: 0;
+  padding: 0;
+}
+
 button {
   &:hover {
     cursor: pointer;
@@ -99,12 +104,98 @@ body {
   content: "\ea1c";
 }
 
+.container-fluid {
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
+
 }
 
-header {
+body {
+  header {
+    margin: 0;
+    padding: 0;
+    a.navbar-brand {
+      padding: 0;
+      .logo {
+        margin-left: 100px;
+        background-color: @main-color;
+        padding: 10px 30px;
+        @media ( max-width: 400px) {
+          margin-left: 0;
+        }
+      }
+    }
+    nav.nav-position {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+      .navbar-toggler {
+        margin: 0 20px;
+      }
+    }
+    .navbar-nav {
+      align-items: center;
+      width: 100%;
+      .nav-item {
+        margin: 0;
+        padding: 0;
+        height: 70px;
+line-height: 70px;
+        font-size: 19px;
+        &:hover {
+          background-color: lightgray;
+        }
+        & a {
+          text-decoration: none;
+          color: rgba(0,0,0,.5);
+                    font-size: 1.3em;
+        }
+        .box-search {
+          width: 75px;
+          height: 70px;
+          background-color: @gray-color;
+          text-align: center;
+          .icon {
+
+            font-size: 20px;
+
+          }
+        }
+
+    }
+         }
+    .button-decoration {
+      height: 40px;
+      border: none;
+      text-transform: uppercase;
+      font-size: 1em;
+      font-weight: 800;
+      border-radius: 0;
+    }
+    .log-in {
+      color: black;
+      width: 75px;
+      .button-decoration;
+      margin: 15px 5px;
+      background-color: white;
+
+
+    }
+    .register {
+      width: 140px;
+      .button-decoration;
+      background-color: @main-color;
+      margin: 15px 20px 15px 10px;
+    }
+  }
+}
+
+/* header {
   display: flex;
 
   background-color: white;
@@ -211,7 +302,7 @@ header {
       }
     }
   }
-}
+} */
 
 .add-more {
   display: flex;
@@ -244,17 +335,15 @@ header {
   .slider {
     max-width: 1350px;
     position: absolute;
-    top: 0px;
-    left: 0px;
-    margin: 0px;
+    top: 0;
+    left: 0;
+    margin: 0;
     width: 100%;
     height: 100%;
     overflow: hidden;
     & > img {
       position: absolute;
-      left: 0px;
-      max-width: 1345px;
-      margin: 1px;
+      left: 0;
     }
     & > input {
       display: none;
@@ -273,8 +362,8 @@ header {
 
     & input[name='slide_switch'] ~ img {
       opacity: 0;
-      margin: 0px;
-      padding: 0px;
+      margin: 0;
+      padding: 0;
       width: 100%;
     }
 
@@ -910,8 +999,8 @@ header {
       .arrow() {
         content: " ";
         position: absolute;
-        width: 0px;
-        height: 0px;
+        width: 0;
+        height: 0;
       }
 
       .scroll-params () {
@@ -1573,7 +1662,6 @@ footer {
         display: none;
         border-bottom: none;
       }
-
 
       .p-ages {
         width: 90px;
