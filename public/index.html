@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>AM4</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
     <link href="styles/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="styles/style-icons.css" rel="stylesheet" type="text/css">
@@ -86,35 +86,36 @@
     </div>
     <img class="decor" src="images/decor.png" alt="decor">
 </div>
-<section class="block_chapter">
-    <div class="sorting">
-        <span>Сортировать:</span>
-        <button class="new">Новые</button>
-        <button class="popular">Популярные</button>
-
-    </div>
-    <div class="chapter_header">
-        <div class="chapter-position">
-            <div class="new-position">
+<section class="container-fluid block_chapter">
+    <div class="row sorting">
+        <span class="col-lg-2 col-sm-3 col-xs-4">Сортировать:</span>
+        <button type="button" class="col-lg-2 col-sm-3 new btn btn-default">Новые</button>
+        <button type="button"  class="col-lg-2 col-sm-3 popular  btn btn-warning">Популярные</button>
+           </div>
+    <div class="container-fluid chapter_header">
+        <div class="row col-lg-12 chapter-position">
+            <div class="col-lg-5 new-position offset-md-1">
                 <h2>Новости</h2>
                 <a href="#">Все новости</a>
             </div>
-            <div class="select_side">
-                <label>
-                    <select class="block-search">
-                        <option>Все</option>
-                        <option>Гонки</option>
-                        <option>Квесты</option>
-                        <option>Стратегии</option>
-                        <option>Щутеры</option>
-                        <option>Симуляторы</option>
-                        <option>Логические</option>
-                    </select>
-                </label>
-            </div>
+            <select class="custom-select my-1 mr-sm-2 col-lg-5" id="inlineFormCustomSelectPref">
+                <option selected>Все</option>
+                <option value="1">Гонки</option>
+                <option value="2">Квесты</option>
+                <option value="3">Стратегии</option>
+                <option value="4">Щутеры</option>
+                <option value="5">Симуляторы</option>
+                <option value="6">Логические</option>
+
+            </select>
         </div>
-        <hr>
-        <div class="slide2">
+        <hr class="col-10">
+<div class="container-fluid of_slide2">
+    <div class="row">
+    </div>
+</div>
+
+      <!--  <div class="slide2">
             <div class="part12">
                 <div class="part1">
                     <img src="images/newsblock2/news1.jpg" alt="Фото первое">
@@ -206,7 +207,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <div class="add-more">
         <button>Подгрузить еще</button>
     </div>
